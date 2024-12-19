@@ -4,27 +4,117 @@
     box-sizing: border-box;
 }
 
-.header{
+#header{
     width: 100%;
     height: 80px;
     background-color: rgba(0, 123, 255, 0.8);
     position: fixed; /* Header'ı sabit yapar */
-    z-index: 1; /* Header'ın diğer elementlerin üzerinde olmasını sağlar */
+    z-index: 1000; /* Header'ın diğer elementlerin üzerinde olmasını sağlar */
 }
 
-.heroBlock{
-    height: 508px;
+#heroBlock{
+    height: 480px;
     width: 100%;
     background-color: aqua;
 }
 
-.actions-block{
+#actions-block{
     width: 100%; 
     height: 140px;
     background-color: gray;
-    position: absolute;
-    
+    position: relative;
 }
 
+#actions-list{
+    width: 1200px; /* UL genişliği */
+    height: 175px; /* UL yüksekliği */
+    background-color: purple; 
+    position: absolute; /* Bağımsız konumlandır */
+    top: -65px; /* Heronun altına ve navın üstüne yerleştir */
+    left: 50%; /* Ortalamak için */
+    transform: translateX(-50%); /* Gerçek ortalama */
+    z-index: 2; /* Diğer elemanların üzerinde olsun */
+    margin: 0;
+} 
 
+#banners-block{
+    width: 100%; 
+    height: 350px; 
+    padding: 30px 15px; /* Yatayda (x) 15px, dikeyde (y) 30px padding */
+    background-color: pink;   
+}
 
+#services-card{
+    width: 100%;
+    height: 308px;
+    padding: 38px 15px;
+    background-color: yellow;
+}
+
+#card-block{
+    width: 100%;
+    height: 294px;
+    padding: 30px 15px;
+    background-color: orange;
+}
+
+#top-services-block{
+    width: 100%;
+    height: 435px;
+    padding: 30px 15px;
+    background-color: chartreuse;
+}
+
+#shortcuts-block{
+    width: 100%;
+    height: 356px;
+    padding: 30px 15px;
+    background-color:brown;
+}
+
+#categories-block{
+    width: 100%;
+    height: 468px;
+    padding-bottom: 30px;
+    background-color:cornflowerblue;
+}
+
+#single-banner-block{
+    width: 100%;
+    height: 465px;
+    padding: 75px 15px 15px;
+    background-color:deeppink;
+}
+
+#myGov{
+    width: 100%;
+    height: 248px;
+    background-color:red;
+}
+
+#social-media-block{
+    width: 100%;
+    height: 524px;
+    background-color:grey;
+}
+
+#statistics-block{
+    width: 100%;
+    height: 430px;
+    padding: 90px 15px;
+    background-color:lightpink;  
+}
+
+#info-block{
+    width: 100%;
+    height: 380px;
+    padding: 90px 15px;
+    background-color:lightgreen;
+}
+
+#footer{
+    width: 100%;
+    height: 642px;
+    padding: 30px 15px 15px;
+    background-color:black;
+}
