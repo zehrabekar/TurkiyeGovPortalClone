@@ -7,15 +7,24 @@
 #header{
     width: 100%;
     height: 80px;
-    background-color: rgba(0, 123, 255, 0.8);
+    background-color:rgba(18,35,51,.3);
     position: fixed; /* Header'ı sabit yapar */
     z-index: 1000; /* Header'ın diğer elementlerin üzerinde olmasını sağlar */
+}
+
+.header-group{
+    width: 1200px;
+    height: 80px;
 }
 
 #heroBlock{
     height: 480px;
     width: 100%;
     background-color: aqua;
+}
+.home-page-search-block{
+    width: 1200px;
+    height: 120px;
 }
 
 #actions-block{
@@ -31,8 +40,7 @@
     background-color: purple; 
     position: absolute; /* Bağımsız konumlandır */
     top: -65px; /* Heronun altına ve navın üstüne yerleştir */
-    left: 50%; /* Ortalamak için */
-    transform: translateX(-50%); /* Gerçek ortalama */
+    
     z-index: 2; /* Diğer elemanların üzerinde olsun */
     margin: 0;
 } 
