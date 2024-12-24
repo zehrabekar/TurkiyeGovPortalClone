@@ -10,72 +10,87 @@
 <body>
     <header id="header" class="d-flex justify-content-center">
       <div class="header-group d-flex align-items-center justify-content-between">
-        <div class="p-2">Flex item 1</div>
-      <div class="p-2 d-flex flex-row">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-      </div>
+        <div style="width: 209.5px; height:80px; padding: 5px; margin-left: 8.550px;" class="d-flex align-items-center">Flex item 1</div>
+      <nav class="mainActionBlocks d-flex justify-content-end" style="width: 981.95px; height: 80px;">
+        <ul class="d-flex align-items-center" style="width: 306.23px; height:51.5px; padding-right:10px; padding-left:0; margin: 14.250px 0 14.250px 0;">
+            <li class="d-flex justify-content-center align-items-center" style="width: 117.69px; height:34.47px; margin:0 0 7.125px 4.275px;">Flex item 1</li>
+            <li class="d-flex justify-content-center align-items-center" style="width: 101.06px; height:34.19px; margin:0 0 7.125px 4.275px;">Flex item 2</li>
+        </ul>
+      </nav>
       </div>
     </header>
 
     <div id="heroBlock" class="d-flex justify-content-center align-items-center">
       <section class="home-page-search-block d-flex flex-column align-items-center">
-        <div class="p-2">Flex item 3</div>
-        <div class="p-2">Flex item 4</div>
+        <!-- <div class="p-2">Flex item 3</div>
+        <div class="p-2">Flex item 4</div> -->
+        <form id="searchForm" style="width: 760px; height: 50px; padding: 7.5px; margin: 0 212.500px; display: flex; align-items: center; background-color: #fff; border: 1px solid #ccc; border-radius: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+          <label for="searchField" style="display: none;">Aranan Terim</label>
+          
+          <!-- Input Alanı -->
+          <input id="searchField" name="search" type="text" placeholder="Size nasıl yardım edebilirim?" maxlength="150" style="width: 623px; height: 40px; padding: 7.425px; border: none; outline: none; font-size: 16px;">
+          
+          <!-- Arama Butonu (Büyüteç İkonu) -->
+          
+          <button id="searchButton" type="submit" style="width: 44px; height: 35px; padding: 7px; border: none; background-color: #fff; cursor: pointer; margin-left: auto; display: flex;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="gray" stroke="gray" stroke-width="1" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.442 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+            </svg>
+          </button>
+        </form>
+
+        <em style="width: 775px; height:49px; padding-top:1px; margin:15px 212.500px 0 212.500px; font-size: 14px; display: flex; justify-content: center; color: rgb(176, 161, 161);">e-Devlet Kapısı ile bilgi ve belgelerinize tek noktadan ulaşabilir, başvuru işlemlerinizi hızla gerçekleştirebilirsiniz</em>
+
       </section>
     </div>
 
     <nav id="actions-block" class="d-flex justify-content-center">
-        <ul id="actions-list" class="d-flex justify-content-evenly align-items-center ps-0">
-          <div class="p-2">Flex item 1</div>
-          <div class="p-2">Flex item 2</div>
-          <div class="p-2">Flex item 3</div>
-          <div class="p-2">Flex item 4</div>
-          <div class="p-2">Flex item 5</div>
+        <ul id="actions-list" class="d-flex align-items-center justify-content-center ps-0">
+          <li class="actionLi" style="margin: 0 12.500px 0 112.500px;">Flex item 1</li>
+          <li class="actionLi" style="margin: 0 12.500px;">Flex item 2</li>
+          <li class="actionLi" style="margin: 0 12.500px;">Flex item 3</li>
+          <li class="actionLi" style="margin: 0 12.500px;">Flex item 4</li>
+          <li class="actionLi" style="margin: 0 112.500px 0 12.500px;">Flex item 5</li>
         </ul>
     </nav>
 
     <section id="banners-block" class="d-flex justify-content-center">
       <div class="top-banners d-flex align-items-center">
-        <div class="precious-card" style="width: 288px; height: 270px;">Flex item 1</div>
-        <div class="slider-content flex-grow-1" style="height: 270px;">Flex item 2</div>
+        <div class="precious-card" style="width: 288px; height: 270px; margin-bottom: 16px;">Flex item 1</div>
+        <div class="slider-content flex-grow-1" style="width: 900px; height: 285px;">Flex item 2</div>
       </div>
     </section>
 
     <section id="services-card" class="d-flex justify-content-center align-items-center">
-      <div class="concept-list" style="width: 1200px; height : 212px">
+      <div class="concept-list" style="width: 1200px; height : 212px; margin: 0 152px;">
         
-        <div class="card-block">
-          <div class="row " style="height: 91px;">
-            <div class="col-4">Flex item 1</div>
-            <div class="col-4">Flex item 2</div>
-            <div class="col-4">Flex item 3</div>
-          </div>
-          <div class="row" style="height: 91px;">
-            <div class="col-4">Flex item 4</div>
-            <div class="col-4">Flex item 5</div>
-            <div class="col-4">Flex item 6</div>
-          </div>
+        <div class="card-block d-flex flex-wrap" style="width: 1180px; height:212px; margin: 10px; padding: 10px 10px 20px 10px; border: 1px solid;">
+          <div class="colc3">Item 1</div>
+          <div class="colc3">Item 1</div>
+          <div class="colc3">Item 1</div>
+          <div class="colc3">Item 1</div>
+          <div class="colc3">Item 1</div>
+          <div class="colc3">Item 1</div>
         </div>
 
       </div>
     </section>
       
     <section id="card-block" class="d-flex justify-content-center">
-      <div class="card-blok-list" style="width: 1200px; height:225px;">
-        <div class="d-flex justify-content-between">
-          <div class="card-item" style="width: 380px; height:205px;">Flex item 1</div>
-          <div class="card-item" style="width: 380px; height:205px;">Flex item 2</div>
-          <div class="card-item" style="width: 380px; height:205px;">Flex item 3</div>
+      <div class="card-blok-list" style="width: 1200px; height:225px; margin: 0 337.500px;">
+        <div class="d-flex" style="height: 225px;">
+          <div class="card-item" style="width: 400px; height:205px; padding: 10px;">Flex item 1</div>
+          <div class="card-item" style="width: 400px; height:205px; padding: 10px;">Flex item 2</div>
+          <div class="card-item" style="width: 400px; height:205px; padding: 10px;">Flex item 3</div>
         </div>
       </div>
     </section>
 
     <section id="top-services-block" class=" d-flex flex-column align-items-center">
       
-      <h2 style="width:1875px; height:35px;" class="d-flex justify-content-center">En Çok Kullanılan Hizmetler</h2>
+      <h2 style="width:1875px; height:35px; margin-bottom: 24.900px; font-size: 24px;" class="d-flex justify-content-center">En Çok Kullanılan Hizmetler</h2>
 
-      <div>
+      <!-- <div>
         <ol>
           <div class="services-list">
             <div class="row">
@@ -97,13 +112,24 @@
           </div>
                     
       </ol>
-      </div>      
+      </div>       -->
+      <ol class="services-list ps-0 d-flex flex-wrap" style="width: 1200px; height:315px; margin:0 337.500px;">
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+        <li><a href="#">Flex Item 1</a></li>
+      </ol>
     </section>
     
     <section id="shortcuts-block" class="d-flex justify-content-center">
-      <ul style="width: 1200px; height: 297px;"  class="d-flex justify-content-between p-0 m-0">
-        <li style="width: 575px; height: 296px;">Flex item 1</li>
-        <li style="width: 575px; height: 296px;">Flex item 2</li>
+      <ul style="width: 1200px; height: 297px; margin: 0 337.500px;"  class="d-flex p-0 m-0">
+        <li style="width: 575px; height: 297px; margin: 0 12.500px;">Flex item 1</li>
+        <li style="width: 575px; height: 297px; margin: 0 12.500px;">Flex item 2</li>
       </ul>
     </section>
     
@@ -137,13 +163,13 @@
       <div class="banner-container">
         <div class="banner-content">
           <h3 style="width: 575px; height:31.500px; margin:90px 0 22.500px 0;">Mobil Cihazlar için e-Devlet Kapısı</h3>
-          <span style="width: 575px; height: 70px; display:block; margin-bottom: 30px;">
+          <span style="width: 575px; height: 63px; display:block; margin-bottom: 30px; font-size: 14px;">
             e-Devlet Kapısı Mobil ile e-hizmetlere Android, iPhone, iPad ve Huawei cihazlarınızdan kolayca erişebilir, "Anlık Bilgilendirme" ile gelişmelerden vakit kaybetmeden haberdar olabilirsiniz.
           </span>
           <div class="mobile-market-icons d-flex" style="width: 575px; height:53px;">
-            <a href="#" class="mobile-market-link">Flex 1</a>
-            <a href="#" class="mobile-market-link">Flex 2</a>
-            <a href="#" class="mobile-market-link">Flex 3</a>
+            <a href="#" class="mobile-market-link" style="width:189px; height: 50px; margin: 3px 7.500px 0 0;">Flex 1</a>
+            <a href="#" class="mobile-market-link" style="width:189px; height: 50px; margin: 3px 7.500px 0 0;">Flex 2</a>
+            <a href="#" class="mobile-market-link" style="width:189px; height: 50px; margin: 3px 7.500px 0 0;">Flex 3</a>
           </div>
           
         </div>
@@ -154,7 +180,7 @@
       <div class="banner-container d-flex" style="width: 1200px; height:248px; margin: 0 352.500px;" >
         <div class="bannerContent-myGovLogo" style="width: 575px; height:233px; padding: 60px 0 45px 0; margin: 0 12.500px;"> Flex item 1</div>
         <div class="bannerContent-myGov" style="width: 575px; height:248px; padding: 0 0 45px 0; margin: 0 12.500px;">
-          <h3 style="width: 575px; height:31.500px; margin: 90px 0 22.500px 0;">Kardeş Ülke Azerbaycan e-Devlet Portali</h3>
+          <h5 style="width: 575px; height:31.500px; margin: 90px 0 22.500px 0;">Kardeş Ülke Azerbaycan e-Devlet Portali</h5>
           <div class="mobile-market-icons" style="width: 575px; height: 59px;">
             <a href="#" style="width: 220px; height:58.800px; padding: 18.400px 40px;">www.w-gov.az</a>
           </div>
@@ -166,7 +192,7 @@
       <div class="social-media-container" style="width: 1200px; height:523.218px; padding : 75px 0; margin: 0 352.500px;">
       <div class="social-media-content d-flex flex-column" style="width: 775px; height:373.218px; margin: 0 12.500px 0 212.500px;">
           <h3 style="width: 775px; height:42px; margin:30px 0;">Sosyal Medyada da Sizin Yanınızdayız!</h3>
-          <span style="width:775px; height:93px; padding-bottom:30px; display: block;">Resmî sosyal medya hesaplarımızda e-Devlet Kapısı ile ilgili gelişmelerden haberdar olabilir, tüm soru ve hata bildirimlerinizi ekibimize iletebilirsiniz. Bize ulaşan tüm yorum ve mesajlar dikkatle incelenmekte ve tümüne cevap verilmesi amaçlanmaktadır.</span>
+          <span style="width:775px; height:93px; padding-bottom:30px; display: block; font-size: 15px;">Resmî sosyal medya hesaplarımızda e-Devlet Kapısı ile ilgili gelişmelerden haberdar olabilir, tüm soru ve hata bildirimlerinizi ekibimize iletebilirsiniz. Bize ulaşan tüm yorum ve mesajlar dikkatle incelenmekte ve tümüne cevap verilmesi amaçlanmaktadır.</span>
           <div class="links d-flex justify-content-center">
             <a href="#" style="width: 97px; height:45px; padding:9.900px; margin:0 15px 7.500px 0;text-decoration: none;" class="text-dark">Item 1</a>
           <a href="#" style="width: 130.888px; height:45px; padding:9.900px; margin:0 15px 7.50.0px 0;text-decoration: none;" class="text-dark">Item 2</a>
@@ -176,8 +202,10 @@
           
           <em style="width: 775px; height:125.718px; padding-top: 15px;">
             <div class="d-flex flex-column align-items-center">
-            #edevlet
-            <a href="#" style="width: 257.96px; height:26.728px; padding: 3.960px 7.920px; margin: 0 258.594px; border: 1px solid; text-decoration: none;" class="text-dark">Sosyal Medya Kullanım Kılavuzu</a>
+            <div style="font-size: 55px;">
+              #edevlet
+            </div>
+            <a href="#" style="width: 257.96px; height:26.728px; padding: 3.960px 7.920px; margin: 0 258.594px; border: 1px solid; border-radius: 12px; text-decoration: none; font-size: 12px;" class="text-dark d-flex justify-content-center">Sosyal Medya Kullanım Kılavuzu</a>
           </div>
           </em>
         
@@ -186,33 +214,31 @@
     </section>
 
     <section id="statistics-block">
-      <h2 style="width: 1875px; height:34.859px; margin-bottom:49.800px;">e-Devlet Kapısı ile İlgili Bilgiler</h2>
+      <h2 style="width: 1875px; height:34.859px; margin-bottom:49.800px; font-size: 25px;" class="d-flex justify-content-center">e-Devlet Kapısı ile İlgili Bilgiler</h2>
       <div class="statisticContent" style="width: 1200px; height:165.625px; margin:0 337.500px;">
         <ul class="statisticList" style="width: 1230px; height:87.750px; margin: 0 -15px; padding: 0;">
           <div class="d-flex justify-content-around">
             <li style="width: 320px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 1</li>
-          <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 2</li>
-          <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 3</li>
-          <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 4</li>
+            <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 2</li>
+            <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 3</li>
+            <li style="width: 160px; height:87.750px; padding-bottom: 15px; margin:0 15px;">Item 4</li>
           </div>
         </ul>
 
-        <a href="#" style="width: 322px; height:33px; padding:4.950px 9.900px; border:1px solid; margin:40px 439.109px 5px 439.109px; display: block;"> 
+        <a href="#" style="width: 322px; height:33px; padding:4.950px 9.900px; border:1px solid; margin:40px 439.109px 5px 439.109px; display: flex; justify-content: center; text-decoration: none; border-radius: 15px;"> 
           Detaylı İstatistik Bilgileri 
         </a>
       </div>
     </section>
 
     <section id="info-block">
-      <div class="statistics-content" style="width: 1200px; height:200.250px; margin: 0 337.500px;">
+      <div class="statistics-content" style="width: 1200px; height:200.250px; margin: 0 337.500px; padding: 0;">
         <div class="statistics-text" style="width: 720px; height:130.500px; padding-bottom:67.500px; margin: 22.500px 240px;">
           <strong>e-Devlet Kapısı</strong>  ile kamu kurumlarının sunduğu hizmetlere tek noktadan, hızlı ve güvenle erişin… 
-          <ul style="padding: 0; margin:0; height:0;">
-            <div class="d-flex">
+          <ul style="padding: 0; margin:0; height:0; display: flex;">
               <li style="width: 225px; height:114.763px; padding-top:29.700px; margin: 0 7.500px;">Item 1</li>
               <li style="width: 225px; height:114.763px; padding-top:29.700px; margin: 0 7.500px;">Item 2</li>
-              <li style="width: 225px; height:114.763px; padding-top:29.700px; margin: 0 7.500px;">Item 3</li>
-            </div>
+              <li style="width: 225px; height:114.763px; padding-top:29.700px; margin: 0 7.500px;">Item 3</li>          
           </ul>
         </div>
       </div>
@@ -220,7 +246,119 @@
 
     <footer id="footer">
       <div class="bottomLinksGroup" style="width: 1200px; height:597.031px; margin:0 337.500px;">
-        <div class="bottomLinksWrapper" style="width: 1200px; height: 448.781px;"></div>
+        
+        <div class="bottomLinksWrapper d-flex" style="width: 1200px; height: 448.781px;">
+        <nav class="bottomLinksBlock" style="width: 930px; height:448.781px;">
+          <ul class="bottomLinks" style="width: 930px; height:403.781px; margin:15px 0 30px 0; padding:0;">
+            <div class="d-flex flex-wrap">
+              <li class="bottomLinksGroup-top">
+                <h6 style="width:279px; height:18.89px; margin: 0;">e-Devlet Kapısı</h6>
+                <ul style="width: 279px; height: 204px; padding: 0;">
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                  <li>
+                    <a href="#">Hakkımızda</a>
+                  </li>
+                  <li>
+                    <a href="#">Yasal Bildirim</a>
+                  </li>
+                  <li>
+                    <a href="#">KVKK Aydınlatma Yükümlülüğü</a>
+                  </li>
+                  <li>
+                    <a href="#">Gizlilik ve Kullanım</a>
+                  </li>
+                  <li>
+                    <a href="#">Politikalarımız</a>
+                  </li>
+                  <li>
+                    <a href="#">DETSİS</a>
+                  </li>
+                  <li>
+                    <a href="#">Kurumsal Kimlik</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="bottomLinksGroup-top">
+                <h6 style="width:279px; height:18.89px; margin: 0;">e-Hizmetler</h6>
+                <ul style="width: 279px; height: 204px; padding: 0;">
+                  <li><a href="#">Sık Kullanılan Hizmetler</a></li>
+                  <li><a href="#">Yeni Eklenen Hizmetler</a></li>
+                  <li><a href="#">Kurum Hizmetleri</a></li>
+                </ul>
+              </li>
+
+              <li class="bottomLinksGroup-top">
+                <h6 style="width:279px; height:18.89px; margin: 0;">Yardım</h6>
+                <ul style="width: 279px; height: 204px; padding: 0;">
+                  <li><a href="#">Genel Yardım</a></li>
+                  <li><a href="#">Sıkça Sorulanlar</a></li>
+                  <li><a href="#">Güvenliğiniz İçin</a></li>
+                  <li><a href="#">Help For Non-Citizens</a></li>
+                </ul>
+              </li>
+
+              <li class="bottomLinksGroup">
+                <h6 style="width:279px; height:18.89px; margin: 0;">Yardım</h6>
+                <ul style="width: 279px; height: 51px; padding: 0;">
+                  <li><a href="#">İletişim</a></li>
+                  <li><a href="#">CİMER Başvurusu</a></li>
+                </ul>
+              </li>
+
+              <li class="bottomLinksGroup">
+                <h6 style="width:279px; height:18.89px; margin: 0;">Erişilebilirlik</h6>
+                <ul style="width: 279px; height: 109px; padding: 0;">
+                  <li><a href="#">Salt Metin Sürümü</a></li>
+                  <li><a href="#">Daha Belirgin Odaklama</a></li>
+                  <li><a href="#">Klavye Kısayolları</a></li>
+                  <li><a href="#">Site Haritası</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+
+        </nav>
+
+        <div class="bottomRightWrapper" style="width: 270px; height: 448.781px; padding-top: 30px;">
+
+          <nav style="width: 268px; height:213.719px; padding:12.750px; border:1px solid; border-radius:15px;">
+            <div style="width: 242.5px; height:53.531px; padding-left: 51px;">
+            <em>Yardım mı lazım?</em>
+            <!-- Aşağıdaki yöntemleri kullanarak bizimle iletişime geçebilirsiniz. -->
+          </div>
+            <ul style="width: 242.5px; height:121.938px; padding: 0; margin-top: 12.750px; margin-bottom: 0;">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+          
+          </nav>
+
+          <nav style="width: 270px; height:79.438px; padding:15px; border:1px solid; border-radius:15px; margin: 15px 0 15px 0;">
+            <div class="d-flex flex-wrap">
+              <a href="#" style="width: 119px; height:25.22px; padding-bottom:6.375px; margin-bottom:6.375px;">Facebook</a>
+            <a href="#" style="width: 119px; height:25.22px; padding-bottom:6.375px; margin-bottom:6.375px;">Twitter</a>
+            <a href="#" style="width: 119px; height:17.844px;">Youtube</a>
+            <a href="#" style="width: 119px; height:17.844px;">Instagram</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="bottomPartnerLinks d-flex" style="width: 1200px; height:92px; padding: 22.500px 0 22.500px 0; border-top: 1px dashed grey; border-bottom: 1px dashed grey;">
+        <div class="images" style="width: 350px; height:45px;"> Item 1</div>
+        <div class="bottomPartnerText" style="width: 850px; height:35px; margin-top: 10px;">Item 2</div>
+      </div>
+
+      <div class="bottomCopyrightBlock d-flex justify-content-center"style="width: 1200px; height:45px; margin-top: 11.250px;">Item 1</div>
+
+
+
+
       </div>
     </footer>
 

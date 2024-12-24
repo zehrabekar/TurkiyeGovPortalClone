@@ -22,13 +22,15 @@ ul{
 }
 
 #heroBlock{
-    height: 480px;
+    height: 508px;
     width: 100%;
     background-color: aqua;
 }
 .home-page-search-block{
     width: 1200px;
     height: 120px;
+    padding-top: 15px;
+    margin: 0 167px 0 167px;
 }
 
 #actions-block{
@@ -39,15 +41,22 @@ ul{
 }
 
 #actions-list{
-    width: 1200px; /* UL genişliği */
-    height: 175px; /* UL yüksekliği */
-    background-color: purple; 
-    position: absolute; /* Bağımsız konumlandır */
-    top: -65px; /* Heronun altına ve navın üstüne yerleştir */
-    
-    z-index: 2; /* Diğer elemanların üzerinde olsun */
+    width: 1200px;
+    height: 175px; 
+    background-color: rgb(220, 129, 220); 
+    position: absolute; 
+    top: -65px; 
+    z-index: 2;
     margin: 0;
 } 
+
+.actionLi{
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #banners-block{
     width: 100%; 
@@ -59,6 +68,7 @@ ul{
 .top-banners{
     width: 1200px;
     height: 290px;
+    margin: 0 152px;
 }
 
 #services-card{
@@ -85,18 +95,29 @@ ul{
     background-color: orange;
 }
 
+.colc3{
+    width: 386px;
+    height: 91px;
+}
+
 #top-services-block{
-    width: 100%;
+    width: 1905px;
     height: 435px;
     padding: 30px 15px;
     background-color: chartreuse;
 }
 
+.services-list li{
+    width: 375px;
+    height: 90px;
+    margin: 0 12.500px 15px 12.500px;
+}
+
 #shortcuts-block{
-    width: 100%;
+    width: 1905px;
     height: 356px;
     padding: 30px 15px;
-    background-color:brown;
+    background-color:rgb(211, 94, 94);
 }
 
 #categories-block{
@@ -145,7 +166,7 @@ ul{
 }
 
 #social-media-block{
-    width: 100%;
+    width: 1905px;
     height: 524px;
     background-color:grey;
 }
@@ -176,4 +197,16 @@ ul{
     height: 642px;
     padding: 30px 15px 15px;
     background-color:rgb(150, 145, 145);
+}
+
+.bottomLinksGroup-top{
+    width: 279px;
+    height: 222.891px;
+    margin:15px 7.500px;
+}
+
+.bottomLinksGroup{
+    width: 279px;
+    height:120.891px;
+    margin:15px 7.500px;
 }
