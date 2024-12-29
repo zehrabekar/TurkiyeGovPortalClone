@@ -14,22 +14,107 @@ ul{
     background-color:rgba(18,35,51,.3);
     position: fixed; /* Header'ı sabit yapar */
     z-index: 1000; /* Header'ın diğer elementlerin üzerinde olmasını sağlar */
+    transition: height 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.header-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
 }
 
 .navbar-toggler {
     margin-left: auto;
 }
 
-/* Navbar açıldığında header'ın yüksekliğini artıracak stil */
+/* Navbar butonları başlangıçta görünür */
+#navbarNav {
+    display: flex; /* Navbar genişken butonlar görünür */
+}
+
 #header.expand {
-    height: 160px; /* 80px daha uzun olacak */
+    height: 160px; /* Header'ın yüksekliğini artır */
+  }
+  
+  /* Navbar'ın açılınca alt kısmında butonların görünmesini sağlar */
+  #header.expand .navbar-expanded {
+    display: block;
+  }
+  
+  .navbar-expanded {
+    display: none; /* Başlangıçta gizli */
+    position: absolute;
+    top: 80px;
+    width: 100%;    
+    padding-top: 10px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .nav-item {
+    background-color: white;
+    margin-right: 10px;
+  }
+  
+/* Sayfa küçüldüğünde navbar ikonuna tıklanınca butonları gizler */
+@media (max-width: 767px) {
+    #navbarNav {
+      display: none; /* Navbar haline geldiğinde header içindeki butonlar gizlenir */
+    }
+
+#header.expand .navbar-collapse {
+  display: none; /* Navbar açıldığında orijinal butonlar gizlensin */
+}
+    
+/* Navbar açıldığında yeni butonlar görünür */
+#header.expand .navbar-expanded {
+    display: block; /* Header açıldığında navbar butonları görünür olacak */
+  }
 }
 
 #newButton {
     display: none; /* Başlangıçta gizli */
 }
 
-.nav-item{
-    background-color: white;
-    margin: 0 0 7px 4px;
-}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
