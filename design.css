@@ -87,34 +87,16 @@ ul{
 }
 
 
+#heroBlock{
+    height: 508px;
+    width: 100%;
+    background-color: aqua;
+}
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 767px) {
+  #heroBlock {
+    height: 465px;
+  }
+}
 
 
