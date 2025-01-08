@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 ul{
@@ -12,7 +12,7 @@ ul{
     width: 100%;
     height: 80px;
     background-color:rgba(18,35,51,.3);
-    position: fixed; /* Header'ı sabit yapar */
+    position: fixed; 
     z-index: 1000; /* Header'ın diğer elementlerin üzerinde olmasını sağlar */
     transition: height 0.3s ease;
     display: flex;
@@ -23,51 +23,53 @@ ul{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
     padding: 0 15px;
     align-items: center;
     position: absolute;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top:10px;
 }
 
 .navbar-toggler {
     margin-left: auto;
 }
 
-/* Navbar butonları başlangıçta görünür */
+
 #navbarNav {
-    display: flex; /* Navbar genişken butonlar görünür */
+    display: flex; 
 }
 
 #header.expand {
     height: 160px; /* Header'ın yüksekliğini artır */
   }
-  
+
   /* Navbar'ın açılınca alt kısmında butonların görünmesini sağlar */
   #header.expand .navbar-expanded {
     display: block;
   }
-  
+
   .navbar-expanded {
     display: none; /* Başlangıçta gizli */
     position: absolute;
     top: 80px;
-    width: 100%;    
+    width: 100%;
     padding-top: 10px;
   }
-  
+
   .navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  
+
   .nav-item {
     background-color: white;
     margin-right: 10px;
   }
-  
+
 /* Sayfa küçüldüğünde navbar ikonuna tıklanınca butonları gizler */
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     #navbarNav {
       display: none; /* Navbar haline geldiğinde header içindeki butonlar gizlenir */
     }
@@ -75,33 +77,82 @@ ul{
 #header.expand .navbar-collapse {
   display: none; /* Navbar açıldığında orijinal butonlar gizlensin */
 }
-    
+
 /* Navbar açıldığında yeni butonlar görünür */
 #header.expand .navbar-expanded {
     display: block; /* Header açıldığında navbar butonları görünür olacak */
   }
 }
 
+@media (max-width: 576px) {
+  .header-group {
+      padding: 0 10px; 
+  }
+}
+
+
 #newButton {
     display: none; /* Başlangıçta gizli */
 }
 
 
+
 #heroBlock{
-    height: 508px;
     width: 100%;
+    min-height: 300px;
     background-color: aqua;
+
 }
 
-@media (max-width: 767px) {
+
+@media (min-width: 576px) {
   #heroBlock {
-    height: 465px;
+      min-height: 508px; 
+  }
+}
+
+@media (max-width: 577px) {
+  #heroBlock {
+    height: 405px !important;
+  }
+}
+
+.home-page-search-block{
+  box-sizing: content-box;
+  height: 117px;
+  padding-top: 14px;
+}
+
+@media (min-width:1024px) {
+  .home-page-search-block{
+    height: 120px;
+    padding-top: 15px;
+  }
+  
+}
+
+@media (min-width: 1215px) {
+  .home-page-search-block{
+    width: 1200px;
+  }
+}
+
+@media (max-width:1215px){
+  .home-page-search-block{
+    width: 100%;
+  }
+}
+
+@media (max-width:576px) {
+  .home-page-search-block{
+    height: 139px;
+    padding-top: 14px;
   }
 }
 
 
 #actions-block{
-  width: 100%; 
+  width: 100%;
   height: 140px;
   background-color: gray;
   position: relative;
@@ -109,15 +160,16 @@ ul{
 
 #actions-list{
   height: 175px; /* UL yüksekliği */
-  background-color: rgb(246, 117, 246); 
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(239, 148, 239);
   position: absolute; /* Bağımsız konumlandır */
   top: -65px; /* Heronun altına ve navın üstüne yerleştir */
-  left: 50%; /* Ortalamak için */
-  transform: translateX(-50%); /* Gerçek ortalama */
-  display: flex;
-  z-index: 2; /* Diğer elemanların üzerinde olsun */
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2;
   margin: 0;
-} 
+}
 
 #actions-list2{
   width: 100%;
@@ -130,28 +182,29 @@ ul{
   height: 82px;
 }
 
-@media (max-width: 767px) {
-  #actions-list {
-    display: none;
+@media (max-width:1215px) {
+  #actions-list{
+    width: 100%;
   }
-
-  #actions-list2 {
-    display: flex;
-  }
-
-  #actions-block {
-    height: 410px;
-  }
-
+  
 }
 
-#banners-block{
-  width: 100%; 
-  height: 350px; 
-  padding: 30px 15px; 
-  background-color: rgb(212, 59, 84);   
+@media (max-width:576px) {
+  #actions-list{
+    display: none !important;
+  }
+  
 }
 
-.top-banners{
-  height: 290px;
+@media (min-width: 760px) and (max-width: 990px) {
+  #actions-list{
+    height: 185px;
+  }
 }
+
+@media (min-width: 576px) and (max-width: 760px) {
+  #actions-list{
+    height: 200px; 
+  }
+}
+

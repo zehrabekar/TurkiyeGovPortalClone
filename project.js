@@ -1,20 +1,20 @@
-// Sayfa kaydırıldığında butonun görünürlüğünü kontrol et
+// Sayfa kaydırıldığında newButton butonunun görünürlüğünü kontrol et
 window.addEventListener('scroll', function () {
     let newButton = document.getElementById('newButton');
-    if (window.scrollY > 340) { // 443px kaydırıldığında
+    if (window.scrollY > 340) { // 340px kaydırıldığında
       newButton.style.display = 'inline'; // Butonu göster
     } else {
       newButton.style.display = 'none'; // Butonu gizle
     }
   });
 
-  // Sayfa kaydırıldığında butonun görünürlüğünü kontrol et
+  // Sayfa kaydırıldığında newButton2 butonunun görünürlüğünü kontrol et
 window.addEventListener('scroll', function () {
   let newButton2 = document.getElementById('newButton2');
-  if (window.scrollY > 340) { // 443px kaydırıldığında
-    newButton2.style.display = 'inline'; // Butonu göster
+  if (window.scrollY > 340) { 
+    newButton2.style.display = 'inline'; 
   } else {
-    newButton2.style.display = 'none'; // Butonu gizle
+    newButton2.style.display = 'none'; 
   }
 });
 
@@ -27,7 +27,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function () 
 // Header yüksekliğini sayfa genişliğine göre ayarla
 window.addEventListener('resize', function() {
   let header = document.getElementById('header');
-  if (window.innerWidth > 767) {  // Eğer sayfa genişliği 767px'yi geçtiyse
+  if (window.innerWidth > 576) {  // Eğer sayfa genişliği 576px'i geçtiyse
     header.classList.remove('expand');  // Header'ı 80px yap
   }
 });
@@ -41,7 +41,7 @@ function updateLayout() {
   let actionsList2 = document.getElementById('actions-list2');
   let windowWidth = window.innerWidth;
 
-  if (windowWidth <= 767) {
+  if (windowWidth <= 576) {
     actionsBlock.style.height = '410px';
     actionsList.style.display = 'none';
     actionsList2.style.display = 'flex';
@@ -53,16 +53,3 @@ function updateLayout() {
 }
 
 updateLayout();
-
-
-window.addEventListener('resize', function() {
-  let bannersBlock = document.getElementById('banners-block');  // actions-list öğesini seç
-  let windowWidth = window.innerWidth;  // Pencere genişliğini al
-
-  if (windowWidth <= 767) {
-    bannersBlock.style.height= '775px';
-  } else {
-    bannersBlock.style.height = '270px';  // 767px üzeri için yükseklik 270px
-  }
-});
-
