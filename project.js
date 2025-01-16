@@ -53,3 +53,15 @@ function updateLayout() {
 }
 
 updateLayout();
+
+// Sayfa kaydırma pozisyonunu kaydet
+window.onload = function() {
+  if (sessionStorage.scrollPosition) {
+    window.scrollTo(0, sessionStorage.scrollPosition);
+  }
+};
+
+// Sayfa kaydırma pozisyonunu her kaydırma değişikliğinde güncelle
+window.onscroll = function() {
+  sessionStorage.scrollPosition = window.scrollY;
+};
