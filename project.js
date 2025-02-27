@@ -18,6 +18,28 @@ window.addEventListener('scroll', function () {
   }
 });
 
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+
+  // Sayfa kaydırma miktarı 50px'in üzerine çıktığında arka plan rengini değiştir
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
+
+document.querySelector('#newButton a').addEventListener('click', function(event) {
+  event.preventDefault(); // Sayfanın kaymasını engelle
+});
+
+
+document.querySelector('#newButton2 a').addEventListener('click', function(event) {
+  event.preventDefault(); // Sayfanın kaymasını engelle
+});
+
 // Navbar toggle butonuna tıklandığında header'ı genişlet
 document.querySelector('.navbar-toggler').addEventListener('click', function () {
     let header = document.getElementById('header');

@@ -9,56 +9,97 @@
   </head>
 <body>
 
-    <header id="header">
-      <div class="header-group">
-        <div class="logo">Home Link</div>
+  <header id="header">
+    <div class="header-group">
+      <div class="logo"></div>
 
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Buton 1</a>
+      <nav class="navbar navbar-expand-sm navbar-light">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-wrap">
+              <li class="nav-item quick-solution">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg>
+                  <span style="margin-left: 5px;">Hızlı Çözüm</span>
+                </a>
+              </li>
+
+              <!-- Yeni buton -->
+              <li class="nav-item" id="newButton" style="display: none;">
+                  <a class="nav-link d-flex" href="#">
+                    <input type="text" class="nav-link p-0 me-3" placeholder="Nasıl yardım edebilirim?" id="newInputField">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-1" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                  </a>
                 </li>
-                <!-- Yeni buton -->
-                <li class="nav-item" id="newButton" style="display: none;">
-                    <a class="nav-link" href="#">Buton 3</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Buton 2</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-      </div>
-      <!-- Uzayan alan -->
-      <div class="navbar-expanded d-sm-none" id="navbarNav">
-        <ul class="navbar-nav d-flex flex-row justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buton 1</a>
-          </li>
-          <li class="nav-item" id="newButton2" style="display: none;">
-            <a class="nav-link" href="#">Buton 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buton 2</a>
-          </li>
-          
-        </ul>
-      </div>
-    </header>
 
 
-<div id="heroBlock" class="d-flex justify-content-center align-items-center">
-  <section class="home-page-search-block d-flex flex-column justify-content-center align-items-center">
-    <div class="searchForm">Flex item 3</div>
-    <div class="heroText">Flex item 4</div>
-  </section>
-</div>
+              <li class="nav-item log-in">
+                <a class="nav-link" href="#">
+                  <span>Giriş Yap</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
+    </div>
+
+    <!-- Uzayan alan -->
+    <div class="navbar-expanded d-sm-none" id="navbarNav">
+      <ul class="navbar-nav d-flex flex-row justify-content-center flex-wrap">
+        <li class="nav-item quick-solution">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+              <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+            
+          </a>
+        </li>
+
+        <li class="nav-item" id="newButton2" style="display: none;">
+          <a class="nav-link d-flex" href="#">
+            <input type="text" class="nav-link p-0 me-3" placeholder="Nasıl yardım edebilirim?" id="newInputField">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-1" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </a>
+        </li>
+
+        <li class="nav-item log-in">
+                <a class="nav-link" href="#">
+                  <span>Giriş Yap</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                  </svg>
+                </a>
+              </li>
+        
+      </ul>
+    </div>
+    
+  </header>
+
+
+
+  <div id="heroBlock" class="d-flex justify-content-center align-items-center">
+    <section class="home-page-search-block d-flex flex-column justify-content-center align-items-center">
+      <div class="searchForm">Flex item 3</div>
+      <div class="heroText">Flex item 4</div>
+    </section>
+  </div>
 
 
 <nav id="actions-block" class="d-flex justify-content-center">
@@ -307,7 +348,7 @@
       <div class="bottomCopyrightBlock d-flex justify-content-center">Item 1</div>
       </div>
     </footer>  
-
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="project.js"></script>
 </body>
