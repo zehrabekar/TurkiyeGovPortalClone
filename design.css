@@ -163,12 +163,14 @@ border: 1px solid rgba(143, 204, 242, 0.99);
   background: radial-gradient(circle at center bottom, rgba(52, 106, 153, 0.55) 25%, rgba(52, 106, 153, 0.2) 100%), url(//cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/m00019.1.8.0.webp) center center / cover no-repeat, rgb(66, 132, 190);
 }
 
+
 .home-page-search-block{
 width: 1200px;
 box-sizing: content-box;
 height: auto;
 padding-top: 15px;
 }
+
 
 .searchForm{
 width: 100%;
