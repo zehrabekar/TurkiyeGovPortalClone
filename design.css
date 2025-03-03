@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
+  font-style: normal;
 }
 
 ul{
@@ -262,21 +263,62 @@ color: #fff;
 #actions-block{
 width: 100%;
 height: 140px;
-background-color: gray;
+background-color: rgb(255, 255, 255);
 position: relative;
 }
 
 #actions-list{
-height: 175px; /* UL yüksekliği */
+height: 175px; 
 width: 100%;
 max-width: 1200px;
-background-color: rgb(239, 148, 239);
+background: transparent;
 position: absolute; /* Bağımsız konumlandır */
-top: -65px; /* Heronun altına ve navın üstüne yerleştir */
+top: -65px; /* Heronun altına ve nav'ın üstüne yerleştir */
 left: 50%; 
 transform: translateX(-50%); 
 z-index: 2;
 margin: 0;
+}
+
+.action-list-item{
+  margin: 0 12.5px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.action-list-item:first-child{
+  margin-left: 112.5px;
+}
+
+.action-list-item:last-child{
+  margin-right: 112.5px;
+}
+
+
+.menu-icon{
+  background-color:#3b77ac;
+  margin: 20px auto 12px auto;
+  color: white;
+  padding: 18px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.menu-icon svg{
+  color: white;
+}
+
+.action-list-link{
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.action-list-link span{
+  color:#535353;
+  font-size: 12px;
 }
 
 #actions-list2{
@@ -287,7 +329,7 @@ display: none;
 }
 
 #actions-list2 li{
-height: 82px;
+  height: 82px;
 }
 
 @media (max-width:1215px) {
@@ -295,19 +337,20 @@ height: 82px;
   width: 100%;
 }
 
+.action-list-item{
+  margin: 0 calc(12.5px - ( (1245px - 100vw) * 0.01 ));
+  height: 100%;
+}
+
+.action-list-item:first-child{
+  margin-left: calc(112.5px - ( (1245px - 100vw) * 0.01 ));
+}
+
+.action-list-item:last-child{
+  margin-right: calc(112.5px - ( (1245px - 100vw) * 0.01 ));
 }
 
 
-@media (min-width: 760px) and (max-width: 990px) {
-#actions-list{
-  height: 185px;
-}
-}
-
-@media (min-width: 576px) and (max-width: 760px) {
-#actions-list{
-  height: 200px; 
-}
 }
 
 @media (max-width:576px) {
@@ -316,6 +359,7 @@ height: 82px;
   display: none !important;
 }
 }
+
 
 
 
