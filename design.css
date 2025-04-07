@@ -406,77 +406,63 @@ margin: 0;
 
 
 
-#banners-block{
-width: 100%;
-height: auto;
-padding: 30px 15px 15px 15px;
-background-color: rgb(237, 102, 125);
-}
 
-.top-banners{
-height: 290px;
-width: 1200px;
-} 
 
-.precious-card{
-width: 288px;
-}
 
-.slider-content{
-width: 900px;
-}
 
-@media (min-width: 567px) and (max-width: 1244px) {
-.top-banners{
+
+
+
+
+
+
+
+
+#banners-block {
   width: 100%;
+  height: auto;
+  padding: 30px 15px 15px 15px;
+  background-color: rgb(240, 240, 240);
+}
+
+.top-banners {
+  width: 1200px;
+  display: flex;
+  align-items: stretch; /* Bu, tüm öğelerin aynı yükseklikte olmasını sağlar */
 }
 
 .precious-card {
   width: 24%;
-}
-
-.slider-content {
-  width: 75%; 
-}
-}
-
-@media (max-width:576px) {
-#banners-block{
-  height: 137.2vw;
-  padding:27px 13.500px 13.500px 13.500px;
-
-}
-
-.top-banners{
+  display: flex;
   flex-direction: column;
-  height: 100%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  height: 100%; /* Precious Card yüksekliği Slider Content ile aynı olacak */
 }
 
-
-.precious-card {
-  width: 100%;
-  height: 44.2vw;  /* 256px'i vw'ye çevirdik */
-  padding-bottom: 2.3vw; /* padding orantılı olarak ayarlandı */
+.precious-card h3 {
+  font-size: 1.5rem;
 }
 
-.slider-content {
-  width: 100%;
-  height: 80.3vw;  /* 463px'i vw'ye çevirdik */
+.precious-card p {
+  font-size: 13px;
+  color: #535353;
 }
-} 
-
 
 
 #services-card{
 width: 100%;
 height: 308px;
 padding: 37.5px 15px;
-background-color: yellow;
+background-color: rgb(223, 223, 223);
 }
 
 .concept-list{
 width: 1200px;
-height: 212px;
+height: auto;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
 }
 
 .card-block{
@@ -486,33 +472,43 @@ margin: 10px;
 padding: 10px 10px 20px 10px;
 }
 
-.colc3{
-width: 386px;
-height: 91px;
+.colc4{
+  width: 25%;
+  height: 50%;
 }
 
-
-
-@media (min-width: 832px) and (max-width: 1024px) {
-#services-card{
-  height: 393px;
-  padding: 35px 14px;
-}
+.card-block-links{
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 10px;
+  color: #222;
 }
 
-@media (max-width:831px) {
-#services-card{
-  height: 666px;
-  padding: 35px 14px;
-}
-}
-
-@media (max-width: 576px) {
-#services-card{
-  padding: 33.750px 13.500px;
-}
+#services-card span{
+  width: 50px;
+  height: 50px;
+  background-color: #3b77ac;
+  border-radius: 50%;
 }
 
+.card-block-icon{
+  color: #fff;
+}
+
+.icon-div{
+  border: 1px solid rgb(214, 213, 213);
+  padding: 5px;
+  margin: 5px;
+  margin-right: 10px;
+  border-radius: 15%;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+}
+
+.card-content p{
+  margin: 0 5px;
+  font-size: 0.95em;
+  font-weight: bold;
+}
 
 
 @media (max-width:1245px) {
@@ -530,32 +526,24 @@ height: 91px;
 }
 }
 
-@media (min-width: 832px) and (max-width: 1024px) {
-.concept-list{
-  height: 303px;
-}
-.card-block{
-  height: 303px;
-}
-
-.colc3{
-  width: 50%;
-}
-
-}
-
-@media (max-width:831px) {
-.concept-list{
-  height: 576px;
+@media (max-width:1024px) {
+  #services-card,
+  .concept-list,
+  .card-block{
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .colc4{
+    width: 33.3%;
+    height: auto;
+  }
 }
 
-.card-block{
-  height: 576px;
-}
-
-.colc3{
-  width: 100%;
-}
+@media (max-width:860px){
+  .colc4{
+    width: 50%;
+    height: auto;
+  }
 }
 
 

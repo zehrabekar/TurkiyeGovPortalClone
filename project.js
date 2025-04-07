@@ -76,6 +76,8 @@ function updateLayout() {
 
 updateLayout();
 
+
+
 // Sayfa kaydırma pozisyonunu kaydet
 window.onload = function() {
   if (sessionStorage.scrollPosition) {
