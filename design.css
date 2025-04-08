@@ -521,9 +521,7 @@ padding: 10px 10px 20px 10px;
 
 }
 
-.colc3{
-  width: 33.3%;
-}
+
 }
 
 @media (max-width:1024px) {
@@ -547,11 +545,19 @@ padding: 10px 10px 20px 10px;
 }
 
 
+@media (max-width:576px) {
+  .colc4{
+    width: 100%;
+  }
+}
+
+
+
 #card-block{
 width: 100%;
-height: 294.8px;
+height: 295px;
 padding: 30px 15px;
-background-color: rgb(243, 216, 164);
+background: linear-gradient(to right, #3e77aa 12%,#7aadd1 100%);
 }
 
 .card-blok-list{
@@ -560,13 +566,14 @@ height: 224.8px;
 }
 
 .items{
-width: 1200px;
+width: 100%;
 height: 224.8px;
 margin: 5px 0;
 }
 
-.card-item{
+.card-block-item{
 width: 33.3%;
+height: 100%;
 padding: 10px;
 }
 
@@ -638,28 +645,72 @@ padding: 10px;
 }
 }
 
+
 #top-services-block{
 width: 100%;
 height: 435px;
 padding: 30px 15px;
-background-color: rgb(182, 245, 120);
+background-color: rgb(223, 223, 223);
 }
 
-#top-services-block h2{
+#top-services-block p{
 width: 100%;
-height: 35px;
 margin-bottom: 25px;
+font-size: 25px;
+font-weight: 200;
+color: #333;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .services-list {
 width: 1200px;
-height: 315px;
+height: auto;
 }
 
-.services-list li{
+.services-list-item{
 flex-basis: calc(33.3% - 25px);
 height: 90px;
 margin: 0 12.5px 15px 12.5px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 1em 1em -1em rgb(0 0 0 / 25%);
+}
+
+.services-list-item a{
+  text-decoration: none;
+  color:#606060;
+}
+.services-list-item:hover{
+  box-shadow: 0 1em 1em -1em rgb(0 0 0 / 50%);
+}
+
+.number{
+  height: 90px;
+  width: 30px;
+  border-right: 1px dotted #c8c1c1;
+  color: #c8c1c1;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.img{
+  margin: 0 10px;
+}
+
+
+.services-item-text h6{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.services-item-text span{
+  font-size: 14px;
+  max-width: 240px;
+  overflow: hidden; /* taşanları gizle */
+  white-space: nowrap; /* alt satıra hiç inme */
+  text-overflow: ellipsis; 
+  display: block;
 }
 
 
@@ -674,7 +725,8 @@ margin: 0 12.5px 15px 12.5px;
 }
 }
 
-@media (min-width:576px) and (max-width:1024px){
+
+@media (min-width:786px) and (max-width:1180px){
 #top-services-block{
   height: 504px;
   padding: 28px 14px;
@@ -683,10 +735,6 @@ margin: 0 12.5px 15px 12.5px;
 #top-services-block h2{
   height: 33px;
   margin-bottom: 23px;
-}
-
-.services-list{
-  height: 392px;
 }
 
 .services-list li{
@@ -699,9 +747,10 @@ margin: 0 12.5px 15px 12.5px;
 .services-list li:nth-child(9) {
   display: none;
 }
+
 }
 
-@media (max-width:576px){
+@media (max-width:786px){
 #top-services-block{
   height: 580px;
   padding: 27px 13.5px;
@@ -712,8 +761,8 @@ margin: 0 12.5px 15px 12.5px;
   margin-bottom: 22.4px;
 }
 
-.services-list{
-  height: 472.5px;
+.services-item-text span{
+max-width: 100%;
 }
 
 .services-list li{
@@ -801,6 +850,34 @@ margin: 0 12.5px;
   height: calc(33.7vw - (100vw - 877px) * 0.2067);
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #categories-block{
