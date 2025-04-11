@@ -405,19 +405,6 @@ margin: 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #banners-block {
   width: 100%;
   height: auto;
@@ -674,6 +661,7 @@ margin: 0 12.5px 15px 12.5px;
 background-color: #fff;
 border-radius: 10px;
 box-shadow: 0 1em 1em -1em rgb(0 0 0 / 25%);
+transition: box-shadow 0.2s ease-in-out;
 }
 
 .services-list-item a{
@@ -779,105 +767,78 @@ max-width: 100%;
 }
 }
 
-
 #shortcuts-block{
 width: 100%;
-height: 356px;
+height: auto;
 padding: 30px 15px;
-background-color:rgb(211, 94, 94);
+background-color:#fff;
 }
 
 .shortcuts{
 width: 1200px;
-height: 296px;
+height: auto;
+}
+
+.shortcuts-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .shortcuts-items{
 width: 50%;
 margin: 0 12.5px;
+box-shadow: 0 0.8em 0.6em -0.2em rgb(0 0 0 / 25%);
+border-radius: 10px;
+transition: box-shadow 0.4s ease-in-out;
+height: auto;
+}
+
+.shortcuts-items:hover{
+  box-shadow: 0 0.8em 0.6em -0.2em rgb(0 0 0 / 50%);
+}
+
+.card-title{
+  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: #333;
+  padding: 0 15px 15px;
+}
+
+.card-text{
+  font-size: 13px;
+  font-weight: 200;
+  color: #5f5e5e;
+  padding: 0 13px;
+}
+
+.shortcuts-items a{
+  text-decoration: none;
 }
 
 @media (max-width:1245px) {
-.shortcuts{
-  width: 100%;
-}
+  .shortcuts{
+    width: 100%;
+  }
+  
+  .shortcuts-items{
+    width: 50%;
+    margin: 0 calc(12.5px - ( (1245px - 100vw) * 0.01 ));
+  
+  }
+  }
 
-.shortcuts-items{
-  width: 50%;
-  margin: 0 calc(12.5px - ( (1245px - 100vw) * 0.01 ));
+  @media (max-width:890px){
+    .shortcuts-img{
+      object-fit: contain;
+      height: 70%;
+    }
 
-}
-}
-@media (min-width:878px) and (max-width:1024px) {
-#shortcuts-block{
-  height: 346px;
-  padding: 28px 14px;
-}
-
-.shortcuts{
-  height: 290px;
-}
-}
-
-@media (min-width:640px) and (max-width:877px) {
-#shortcuts-block{
-  padding: 28px 14px;
-}
-}
-
-@media (max-width:639px) {
-#shortcuts-block{
-  padding: 27px 13.5px;
-}
-}
-
-@media (max-width: 877px) {
-#shortcuts-block {
-  height: calc(39vw - (100vw - 877px) * 0.2067);
-}
-
-.shortcuts{
-  height: calc(32.5vw - (100vw - 877px) * 0.2067);
-}
-}
-
-@media (max-width: 780px) {
-#shortcuts-block{
-  height: calc(41vw - (100vw - 877px) * 0.2067);
-}
-
-.shortcuts{
-  height: calc(33.7vw - (100vw - 877px) * 0.2067);
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .card-body{
+      margin: 0 10px;
+    }
+  }
 
 
 #categories-block{
