@@ -998,7 +998,10 @@ margin: 3px 7.5px 0 0;
 #myGov{
 width: 100%;
 height: 248px;
-background-color:rgb(231, 120, 120);
+background-image: url("https://cdn.e-devlet.gov.tr/themes/izmir//images/home_page/mygov_bg.215.png");
+background-repeat: no-repeat;
+background-size: 600px auto;
+background-position: 20% center;
 }
 
 .banner-container{
@@ -1010,7 +1013,6 @@ height: 100%;
 width: 50%;
 margin:0 12.5px;
 }
-
 
 .myGovImage{
 margin-right: 36px;
@@ -1026,14 +1028,24 @@ width: 100%;
 
 }
 
+.myGov-text{
+  margin-top: 35px;
+  font-size: 22px;
+  color: #222;
+  font-weight: 100;
+  font-family: 'Roboto Slab',sans-serif;
+}
+
 .myGovLink{
 width: 220px;
-border: 1px solid;
 border-radius: 50px;
 height: 59px;
 display: flex;
 align-items: center;
 justify-content: center;
+background-color: #4067AD;
+color: #fff;
+text-decoration: none;
 }
 
 @media (max-width:1215px){
@@ -1050,9 +1062,8 @@ justify-content: center;
 }
 
 @media (max-width:576px) {
-.myGovLink{
-  width: 170px;
-  height: 50px;
+.myGov-text{
+  font-size: 18px;
 }
 }
 
