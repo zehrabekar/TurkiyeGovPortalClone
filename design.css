@@ -845,7 +845,7 @@ height: auto;
 width: 100%;
 min-height: 468px;
 padding-bottom: 30px;
-background-color:rgb(243, 237, 255);
+background-color:rgb(37, 140, 127);
 }
 
 .inner-frame{
@@ -860,93 +860,103 @@ height:auto;
 }
 
 .e-service{
-width: 1170px;
-height: 54px;
+width: 100%;
+height: 100%;
 padding: 11.25px;
 font-size: 20px;
 text-align: center;
+color: #fff;
 }
 
 .e-service-text{
-width: 1170px;
-height: 42px;
+width: 100%;
+height: 100%;
 margin: 15px 0;
-font-size: 13px;
+font-size: 15px;
+color: #fff;
 }
 
 .service-categories-list{
 width: 1200px;
 }
 
-.service-categories-list li {
+.service-categories-item {
 width: calc(25% - 25px);
 height: 48px;
-margin: 7.500px 12.500px;
-border: 1px solid;
+margin: 7.5px 12.5px;
 border-radius: 10px;
 display: flex;
 align-items: center;
-justify-content:center ;
+background-color: #fff;
+box-shadow: 0 1em 1em -1em rgb(0 0 0 / 25%);
+transition: box-shadow 0.3s ease-in-out;
 }
+
+.service-categories-item:hover{
+  box-shadow: 0 1em 1em -1em rgb(0 0 0 / 60%);
+}
+
+.service-categories-item em{
+  color: #5f5e5e;
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 3px;
+}
+
+.service-categories-item svg{
+  height: 100%;
+  color: #4284be;
+  border-right: 1px dotted #4284be;
+  margin-left: 4px;
+  padding-right: 4px;
+}
+
+.service-categories-item a{
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
 
 @media (max-width:1215px) {
-
-.inner-frame,
-.service-categories-list,
-.content-wrapper,
-.e-service,
-.e-service-text{
-  width: 100%;
-  height: auto;
+  .inner-frame,
+  .service-categories-list,
+  .content-wrapper{
+    width: 100%;
+    height: auto;
+  }
 }
 
-.service-categories-list li {
-  /* Li'nin genişliği: 25% - azalan margin değerleri */
-  width: calc(25% - (2 * (12.5px - ((1215px - 100vw) * 0.01))));
+@media (max-width:1100px) {
+  .service-categories-list li {
+    width: calc((100% / 3) - (2 * (12.5px - ((1215px - 100vw) * 0.01))));
+    margin-left: calc(12.5px - ((1215px - 100vw) * 0.01));
+    margin-right: calc(12.5px - ((1215px - 100vw) * 0.01));
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
 
-  /* Margin azalarak küçülecek */
-  margin-left: calc(12.5px - ((1215px - 100vw) * 0.01));
-  margin-right: calc(12.5px - ((1215px - 100vw) * 0.01));
+@media (max-width:815px) {
+  .service-categories-list li {
+    width: calc((100% / 2) - (2 * (12.5px - ((1215px - 100vw) * 0.01))));
+    margin-left: calc(12.5px - ((1215px - 100vw) * 0.01));
+    margin-right: calc(12.5px - ((1215px - 100vw) * 0.01));
+    margin-top: 6.75px;
+    margin-bottom: 6.75px;
+  }
+}
+
+@media (max-width:576px) {
+  .service-categories-list em {
+    font-size: 13px;
+  }
+  .service-categories-item svg{
+    width: 22px;
+  }
 }
 
 
-
-}
-
-@media (max-width: 1024px) {
-.service-categories-list li {
-  width: calc((100% / 3) - (2 * (12.5px - ((1215px - 100vw) * 0.01))));
-  margin-left: calc(12.5px - ((1215px - 100vw) * 0.01));
-  margin-right: calc(12.5px - ((1215px - 100vw) * 0.01));
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-}
-
-
-@media (min-width: 639px) and (max-width:740px) {
-.service-categories-list li{
-  height: 58.5px;
-}
-}
-
-@media (max-width: 640px) {
-.service-categories-list li {
-  width: calc((100% / 2) - (2 * (12.5px - ((1215px - 100vw) * 0.01))));
-  margin-left: calc(12.5px - ((1215px - 100vw) * 0.01));
-  margin-right: calc(12.5px - ((1215px - 100vw) * 0.01));
-  margin-top: 6.75px;
-  margin-bottom: 6.75px;
-}
-
-.inner-frame{
-  padding:27px;
-}
-
-#categories-block{
-  padding-bottom: 27px;
-}
-}
 
 #single-banner-block{
 width: 100%;
