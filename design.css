@@ -957,12 +957,15 @@ transition: box-shadow 0.3s ease-in-out;
 }
 
 
-
 #single-banner-block{
 width: 100%;
-height: auto;
+height: 465px;
 padding: 75px 15px 15px;
-background-color:rgb(202, 142, 174);
+background-image: url("https://cdn.e-devlet.gov.tr/themes/izmir//images/banners_webp/t001.webp");
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+overflow: hidden;
 }
 
 .banner-container{
@@ -976,32 +979,51 @@ height: 100%;
 padding-bottom: 45px;
 margin-left: auto;
 font-family: sans-serif;
-gap:30px
 }
 
-.mobile-market-icon{
-height: 59px;
-border: 1px solid;
-border-radius: 50px;
-width: 219px;
+.banner-content h3{
+  font-size: 22px;
+  color: #222;
+  font-weight: 100;
+  margin-bottom: 0;
 }
+
+.banner-content span{
+  font-size: 15px;
+  color: #222;
+  margin: 20px 0 30px;
+}
+
 .mobile-market-link{
-width: 33%;
-height: 50px;
-border: 1px solid black;
-border-radius: 5px;
-margin: 3px 7.5px 0 0;
+  margin-right:3px;
 }
-
 
 @media (max-width:1245px) {
-
 .banner-container{
   height: auto;
 }
-.mobile-market-icons{
-  flex-wrap: wrap;
+
 }
+
+@media (max-width:750px){
+  .banner-content{
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width:576px){
+  .banner-content{
+    padding-bottom: 0;
+  }
+
+  .banner-content h3{
+    font-size: 18px;
+  }
+
+  .banner-content span{
+    font-size: 14px;
+  }
+
 }
 
 
