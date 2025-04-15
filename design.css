@@ -1202,11 +1202,18 @@ white-space: nowrap;
 }
 }
 
+@media (max-width:576px) {
+  .social-media-header{
+    font-size: 25px;
+  }
+}
+
+
 #statistics-block{
 width: 100%;
 height: 430px;
 padding: 90px 15px;
-background-color:lightpink;  
+background-color:#fff;  
 }
 
 .statisticContentHeader{
@@ -1216,7 +1223,8 @@ text-align: center;
 font-size: 25px;
 margin-bottom: 50px;
 font-weight: 300;
-color: #222;
+color: rgb(0, 0, 0);
+font-family: Lato;
 }
 
 .statisticContent{
@@ -1237,6 +1245,33 @@ margin: 0 15px;
 width: auto;
 }
 
+.statisticListItem dfn{
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.statisticListItem span{
+  color: #fff;
+  background-color: #54606b;
+  font-size: 28px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.statisticListItem span::after {
+  content: "";
+  position: absolute;
+  width: 90%; /* genişlik oranı */
+  height: 1px; /* çizgi kalınlığı */
+  background-color: rgb(79, 77, 77);
+  top: 50%;
+  left: 5%;
+}
+
+
+
 .statisticLink{
 text-align: center;
 font-size: 15px;
@@ -1246,8 +1281,9 @@ width: auto;
 padding: 5px 70px;
 margin: 40px auto 5px auto;
 text-decoration: none;
-font-weight: 300;
+font-weight: 400;
 color: #222;
+font-family: Lato;
 }
 
 @media (max-width:1245px) {
@@ -1259,6 +1295,43 @@ color: #222;
   width: 100%;
   margin: 0;
 }
+}
+
+@media (max-width:1024px) {
+  .statisticContentHeader{
+    font-size: 22px;
+  }
+
+  .statisticListItem dfn{
+    font-size: 18px;
+  }
+  .statisticListItem span{
+    font-size: 23px;
+  }
+
+  .statisticListItem{
+    margin-bottom: 18px;
+  }
+
+  .statisticLink{
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width:576px) {
+  .statisticListItem span{
+    font-size: 16px;
+  }
+
+  .statisticListItem{
+    margin-bottom: 18px;
+  }
+
+  .statisticLink{
+    font-size: 12px;
+  }
+
 }
 
 #info-block{
