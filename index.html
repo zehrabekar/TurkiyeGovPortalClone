@@ -1,328 +1,587 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="design.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="design.css" />
     <title>E Devlet Kapısı Devletin Kısayolu | ...</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-<body>
+  <body>
+    <header id="header">
+      <div class="header-group">
+        <div class="logo"></div>
 
-  <header id="header">
-    <div class="header-group">
-      <div class="logo"></div>
-
-      <nav class="navbar navbar-expand-sm navbar-light">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav d-flex flex-wrap">
               <li class="nav-item quick-solution">
                 <a class="nav-link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
-                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
-                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-right-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+                    />
+                    <path
+                      d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                    />
                   </svg>
-                  <span style="margin-left: 5px;">Hızlı Çözüm</span>
+                  <span style="margin-left: 5px">Hızlı Çözüm</span>
                 </a>
               </li>
 
               <!-- Yeni buton -->
-              <li class="nav-item" id="newButton" style="display: none;">
-                  <a class="nav-link d-flex" href="#">
-                    <input type="text" class="nav-link p-0 me-3" placeholder="Nasıl yardım edebilirim?" id="newInputField">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-1" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                    </svg>
-                  </a>
-                </li>
-
+              <li class="nav-item" id="newButton" style="display: none">
+                <a class="nav-link d-flex" href="#">
+                  <input
+                    type="text"
+                    class="nav-link p-0 me-3"
+                    placeholder="Nasıl yardım edebilirim?"
+                    id="newInputField"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search mt-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </a>
+              </li>
 
               <li class="nav-item log-in">
                 <a class="nav-link" href="#">
                   <span>Giriş Yap</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-in-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                    />
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+      </div>
 
+      <!-- Uzayan alan -->
+      <div class="navbar-expanded d-sm-none" id="navbarNav">
+        <ul class="navbar-nav d-flex flex-row justify-content-center flex-wrap">
+          <li class="nav-item quick-solution">
+            <a class="nav-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chat-right-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+                />
+                <path
+                  d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item" id="newButton2" style="display: none">
+            <a class="nav-link d-flex" href="#">
+              <input
+                type="text"
+                class="nav-link p-0 me-3"
+                placeholder="Nasıl yardım edebilirim?"
+                id="newInputField"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search mt-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item log-in">
+            <a class="nav-link" href="#">
+              <span>Giriş Yap</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-in-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div
+      id="heroBlock"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <section
+        class="home-page-search-block d-flex flex-column justify-content-center align-items-center"
+      >
+        <form class="searchForm d-flex">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Size nasıl yardım edebilirim?"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-search mt-2 me-3 text-dark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </form>
+        <em class="heroText">
+          e-Devlet Kapısı ile bilgi ve belgelerinize tek noktadan ulaşabilir,
+          başvuru işlemlerinizi hızla gerçekleştirebilirsiniz
+        </em>
+      </section>
     </div>
 
-    <!-- Uzayan alan -->
-    <div class="navbar-expanded d-sm-none" id="navbarNav">
-      <ul class="navbar-nav d-flex flex-row justify-content-center flex-wrap">
-        <li class="nav-item quick-solution">
-          <a class="nav-link" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
-              <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
-              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-            </svg>
-            
-          </a>
-        </li>
-
-        <li class="nav-item" id="newButton2" style="display: none;">
-          <a class="nav-link d-flex" href="#">
-            <input type="text" class="nav-link p-0 me-3" placeholder="Nasıl yardım edebilirim?" id="newInputField">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-1" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
-          </a>
-        </li>
-
-        <li class="nav-item log-in">
-                <a class="nav-link" href="#">
-                  <span>Giriş Yap</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-                  </svg>
-                </a>
-              </li>
-        
-      </ul>
-    </div>
-    
-  </header>
-
-
-
-  <div id="heroBlock" class="d-flex justify-content-center align-items-center">
-    <section class="home-page-search-block d-flex flex-column justify-content-center align-items-center">
-      <form class="searchForm d-flex">
-        <input type="text" class="search-input" placeholder="Size nasıl yardım edebilirim?">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search mt-2 me-3 text-dark" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-        </svg>
-      </form>
-      <em class="heroText">
-        e-Devlet Kapısı ile bilgi ve belgelerinize tek noktadan ulaşabilir, başvuru işlemlerinizi hızla gerçekleştirebilirsiniz
-      </em>
-    </section>
-  </div>
-
-
-<nav id="actions-block" class="d-flex justify-content-center">
-  <ul id="actions-list" class="d-flex align-items-center ps-0 justify-content-evenly">
-    <li class="action-list-item">
-      <a href="#" class="action-list-link d-flex flex-column">
-        <span class="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
-          </svg>
-        </span>
-        <em>e-Hizmetler</em>
-        <span class="px-2">Sorgulama, Başvuru ve Ödeme hizmetleri.</span>
-      </a>
-    </li>
-    <li class="action-list-item">
-      <a href="#" class="action-list-link d-flex flex-column">
-        <span class="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
-            <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
-            <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
-          </svg>
-        </span>
-        <em>Kurumlar</em>
-        <span class="px-2">Resmi kurumların hizmetleri ve iletişim bilgileri.</span>
-      </a>
-    </li>
-    <li class="action-list-item">
-      <a href="#" class="action-list-link d-flex flex-column">
-        <span class="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-signpost-2" viewBox="0 0 16 16">
-            <path d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0M13.5 3l.75 1-.75 1H2V3zm.5 5v2H2.5l-.75-1 .75-1z"/>
-          </svg>
-        </span>
-        <em>Belediyeler</em>
-        <span class="px-2">Belediyelerin iletişim bilgileri ve sundukları hizmetler.</span>
-      </a>
-    </li>
-    <li class="action-list-item">
-      <a href="#" class="action-list-link d-flex flex-column">
-        <span class="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-            <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
-          </svg>
-        </span>
-        <em>Firmalar</em>
-        <span class="px-2">Şirketlerdeki fatura ve abonelik bilgilerinize erişin.</span>
-      </a>
-    </li>
-    <li class="action-list-item">
-      <a href="#" class="action-list-link d-flex flex-column">
-        <span class="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-          </svg>
-        </span>
-        <em>Üniversiteler</em>
-        <span class="px-2">Üniversitelerin sundukları hizmetler.</span>
-      </a>
-    </li>
-  </ul>
-
-   <ul id="actions-list2" class="flex-column p-0">
-    <li class="action-list-item2">
-      <a href="#" class="d-flex action-list-link2 text-decoration-none">
-
-        <span class="menu-icon2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
-          </svg>
-        </span>
-
-        <div class="div">
-          <div class="d-flex flex-column">
+    <nav id="actions-block" class="d-flex justify-content-center">
+      <ul
+        id="actions-list"
+        class="d-flex align-items-center ps-0 justify-content-evenly"
+      >
+        <li class="action-list-item">
+          <a href="#" class="action-list-link d-flex flex-column">
+            <span class="menu-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-arrow-left-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"
+                />
+              </svg>
+            </span>
             <em>e-Hizmetler</em>
-            <span class="text">Sorgulama, Başvuru ve Ödeme hizmetleri.</span>   
-        </div>
-      </div>
-
-      <span class="icon-in-padding">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-        </svg>
-      </span>
-      </a>
-      
-    </li>
-
-
-    <li class="action-list-item2">
-      <a href="#" class="d-flex action-list-link2 text-decoration-none">
-
-        <span class="menu-icon2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
-            <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
-            <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
-          </svg>
-        </span>
-
-        <div class="div">
-          <div class="d-flex flex-column">
+            <span class="px-2">Sorgulama, Başvuru ve Ödeme hizmetleri.</span>
+          </a>
+        </li>
+        <li class="action-list-item">
+          <a href="#" class="action-list-link d-flex flex-column">
+            <span class="menu-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-buildings"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"
+                />
+                <path
+                  d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"
+                />
+              </svg>
+            </span>
             <em>Kurumlar</em>
-            <span class="text">Resmi kurumların hizmetleri ve iletişim bilgileri.</span>   
-        </div>
-      </div>
-
-      <span class="icon-in-padding">       
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-        </svg>
-      </span>
-      </a>
-      
-    </li>
-
-    <li class="action-list-item2">
-      <a href="#" class="d-flex action-list-link2 text-decoration-none">
-
-        <span class="menu-icon2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-signpost-2" viewBox="0 0 16 16">
-            <path d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0M13.5 3l.75 1-.75 1H2V3zm.5 5v2H2.5l-.75-1 .75-1z"/>
-          </svg>
-        </span>
-
-        <div class="div">
-          <div class="d-flex flex-column">
+            <span class="px-2"
+              >Resmi kurumların hizmetleri ve iletişim bilgileri.</span
+            >
+          </a>
+        </li>
+        <li class="action-list-item">
+          <a href="#" class="action-list-link d-flex flex-column">
+            <span class="menu-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-signpost-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0M13.5 3l.75 1-.75 1H2V3zm.5 5v2H2.5l-.75-1 .75-1z"
+                />
+              </svg>
+            </span>
             <em>Belediyeler</em>
-            <span class="text">Belediyelerin iletişim bilgileri ve sundukları hizmetler.</span>  
-        </div>
-      </div>
-
-      <span class="icon-in-padding">       
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-        </svg>
-      </span>
-      </a>
-      
-    </li>
-
-    <li class="action-list-item2">
-      <a href="#" class="d-flex action-list-link2 text-decoration-none">
-
-        <span class="menu-icon2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-            <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
-          </svg>
-        </span>
-
-        <div class="div">
-          <div class="d-flex flex-column">
+            <span class="px-2"
+              >Belediyelerin iletişim bilgileri ve sundukları hizmetler.</span
+            >
+          </a>
+        </li>
+        <li class="action-list-item">
+          <a href="#" class="action-list-link d-flex flex-column">
+            <span class="menu-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-building"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                />
+              </svg>
+            </span>
             <em>Firmalar</em>
-            <span class="text">Şirketlerdeki fatura ve abonelik bilgilerinize erişin.</span>   
-        </div>
-      </div>
-
-      <span class="icon-in-padding">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-        </svg>
-      </span>
-      </a>
-      
-    </li>
-
-    <li class="action-list-item2">
-      <a href="#" class="d-flex action-list-link2 text-decoration-none">
-
-        <span class="menu-icon2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-          </svg>
-        </span>
-
-        <div class="div">
-          <div class="d-flex flex-column">
+            <span class="px-2"
+              >Şirketlerdeki fatura ve abonelik bilgilerinize erişin.</span
+            >
+          </a>
+        </li>
+        <li class="action-list-item">
+          <a href="#" class="action-list-link d-flex flex-column">
+            <span class="menu-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-mortarboard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"
+                />
+              </svg>
+            </span>
             <em>Üniversiteler</em>
-            <span class="text">Üniversitelerin sundukları hizmetler.</span>  
+            <span class="px-2">Üniversitelerin sundukları hizmetler.</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul id="actions-list2" class="flex-column p-0">
+        <li class="action-list-item2">
+          <a href="#" class="d-flex action-list-link2 text-decoration-none">
+            <span class="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-arrow-left-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"
+                />
+              </svg>
+            </span>
+
+            <div class="div">
+              <div class="d-flex flex-column">
+                <em>e-Hizmetler</em>
+                <span class="text"
+                  >Sorgulama, Başvuru ve Ödeme hizmetleri.</span
+                >
+              </div>
+            </div>
+
+            <span class="icon-in-padding">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </span>
+          </a>
+        </li>
+
+        <li class="action-list-item2">
+          <a href="#" class="d-flex action-list-link2 text-decoration-none">
+            <span class="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-buildings"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"
+                />
+                <path
+                  d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"
+                />
+              </svg>
+            </span>
+
+            <div class="div">
+              <div class="d-flex flex-column">
+                <em>Kurumlar</em>
+                <span class="text"
+                  >Resmi kurumların hizmetleri ve iletişim bilgileri.</span
+                >
+              </div>
+            </div>
+
+            <span class="icon-in-padding">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </span>
+          </a>
+        </li>
+
+        <li class="action-list-item2">
+          <a href="#" class="d-flex action-list-link2 text-decoration-none">
+            <span class="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-signpost-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0M13.5 3l.75 1-.75 1H2V3zm.5 5v2H2.5l-.75-1 .75-1z"
+                />
+              </svg>
+            </span>
+
+            <div class="div">
+              <div class="d-flex flex-column">
+                <em>Belediyeler</em>
+                <span class="text"
+                  >Belediyelerin iletişim bilgileri ve sundukları
+                  hizmetler.</span
+                >
+              </div>
+            </div>
+
+            <span class="icon-in-padding">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </span>
+          </a>
+        </li>
+
+        <li class="action-list-item2">
+          <a href="#" class="d-flex action-list-link2 text-decoration-none">
+            <span class="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-building"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                />
+              </svg>
+            </span>
+
+            <div class="div">
+              <div class="d-flex flex-column">
+                <em>Firmalar</em>
+                <span class="text"
+                  >Şirketlerdeki fatura ve abonelik bilgilerinize erişin.</span
+                >
+              </div>
+            </div>
+
+            <span class="icon-in-padding">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </span>
+          </a>
+        </li>
+
+        <li class="action-list-item2">
+          <a href="#" class="d-flex action-list-link2 text-decoration-none">
+            <span class="menu-icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-mortarboard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"
+                />
+              </svg>
+            </span>
+
+            <div class="div">
+              <div class="d-flex flex-column">
+                <em>Üniversiteler</em>
+                <span class="text">Üniversitelerin sundukları hizmetler.</span>
+              </div>
+            </div>
+
+            <span class="icon-in-padding">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="banners-block" class="d-flex justify-content-center">
+      <div class="top-banners d-flex justify-content-between">
+        <div class="precious-card d-flex flex-column">
+          <a href="#" class="text-decoration-none">
+            <div class="card">
+              <img
+                src="https://cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0002.1.8.0.webp"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3>ATAM</h3>
+                <p>
+                  Atatürk Araştırma Merkezi Başkanlığı İnternet sitesini ziyaret
+                  edin.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
 
-      <span class="icon-in-padding">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-          <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-        </svg>
-      </span>
-      </a>
-      
-    </li>
-
-  </ul>
-  
-</nav>
-
-
-<section id="banners-block" class="d-flex justify-content-center">
-  <div class="top-banners d-flex justify-content-between">
-    
-    <div class="precious-card d-flex flex-column">
-      <a href="#" class="text-decoration-none">
-        <div class="card">
-          <img src="https://cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0002.1.8.0.webp" class="card-img-top">
-          <div class="card-body">
-            <h3>ATAM</h3>
-            <p>Atatürk Araştırma Merkezi Başkanlığı İnternet sitesini ziyaret edin.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-
-    <!-- <div class="slider-content d-flex">
+        <!-- <div class="slider-content d-flex">
        
        
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -360,271 +619,390 @@
       </div>
       
     </div> -->
-
-    
-  </div>
-</section>
-
-
-<section id="services-card" class="d-flex justify-content-center align-items-center">
-  <div class="concept-list">
-    <div class="card-block d-flex flex-wrap">
-
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-workspace card-block-icon" viewBox="0 0 16 16">
-                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Çalışma Hayatım</p>
-          </div>
-        </a>
       </div>
-      
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-car-front-fill card-block-icon" viewBox="0 0 16 16">
-                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
-              </svg>
-            </span>
+    </section>
+
+    <section
+      id="services-card"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="concept-list">
+        <div class="card-block d-flex flex-wrap">
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-person-workspace card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                    />
+                    <path
+                      d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Çalışma Hayatım</p>
+              </div>
+            </a>
           </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Araçlarım (Gerçek Kişi)</p>
+
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-car-front-fill card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Araçlarım (Gerçek Kişi)</p>
+              </div>
+            </a>
           </div>
-        </a>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-car-front card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"
+                    />
+                    <path
+                      d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Araçlarım (Tüzel Kişi)</p>
+              </div>
+            </a>
+          </div>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-envelope card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Adrese Teslim Şifre Başvurusu</p>
+              </div>
+            </a>
+          </div>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-building card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                    />
+                    <path
+                      d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>İkametgahım (Adrese Bağlı Hizmetler)</p>
+              </div>
+            </a>
+          </div>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-people-fill card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Varis Hizmetleri</p>
+              </div>
+            </a>
+          </div>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-geo-alt card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Türkiye Ulusal Coğrafi Bilgi Sistemi</p>
+              </div>
+            </a>
+          </div>
+          <div class="colc4">
+            <a href="#" class="card-block-links d-flex border-bottom">
+              <div class="icon-div">
+                <span class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-sun card-block-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <p>Özel Sigortalarım</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-car-front card-block-icon" viewBox="0 0 16 16">
-                <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
-                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Araçlarım (Tüzel Kişi)</p>
-          </div>
-        </a>
+    </section>
+
+    <section id="card-block" class="d-flex justify-content-center">
+      <div class="card-blok-list d-flex justify-content-center">
+        <div class="items d-flex" style="margin: 5px 0">
+          <div class="card-block-item">Flex item 1</div>
+          <div class="card-block-item">Flex item 2</div>
+          <div class="card-block-item">Flex item 3</div>
+        </div>
       </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope card-block-icon" viewBox="0 0 16 16">
-                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Adrese Teslim Şifre Başvurusu</p>
-          </div>
-        </a>
-      </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-building card-block-icon" viewBox="0 0 16 16">
-                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>İkametgahım (Adrese Bağlı Hizmetler)</p>
-          </div>
-        </a>
-      </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people-fill card-block-icon" viewBox="0 0 16 16">
-                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Varis Hizmetleri</p>
-          </div>
-        </a>
-      </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt card-block-icon" viewBox="0 0 16 16">
-                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Türkiye Ulusal Coğrafi Bilgi Sistemi</p>
-          </div>
-        </a>
-      </div>
-      <div class="colc4">
-        <a href="#" class="card-block-links d-flex border-bottom">
-          <div class="icon-div">
-            <span class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun card-block-icon" viewBox="0 0 16 16">
-                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-              </svg>
-            </span>
-          </div>
-          <div class="card-content d-flex align-items-center">
-            <p>Özel Sigortalarım</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section
+      id="top-services-block"
+      class="d-flex flex-column align-items-center"
+    >
+      <p class="d-flex justify-content-center fw-light">
+        En Çok Kullanılan Hizmetler
+      </p>
 
-<section id="card-block" class="d-flex justify-content-center">
-  <div class="card-blok-list d-flex justify-content-center">
-    <div class="items d-flex" style="margin: 5px 0;">
-      <div class="card-block-item">Flex item 1</div>
-      <div class="card-block-item">Flex item 2</div>
-      <div class="card-block-item">Flex item 3</div>
-    </div>
-  </div>
-</section>
+      <ol
+        class="services-list d-flex flex-wrap ps-0 m-0"
+        style="list-style-type: none"
+      >
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">1</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/254.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Sosyal Güvenlik Kurumu</h6>
+                <span>SGK Tescil ve Hizmet Dökümü / İşyeri Ünvan Listesi</span>
+              </div>
+            </div>
+          </a>
+        </li>
 
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">2</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/13.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Emniyet Genel Müdürlüğü</h6>
+                <span>Araç Plakasına Yazılan Ceza Sorgulama</span>
+              </div>
+            </div>
+          </a>
+        </li>
 
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">3</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/14.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Gelir İdaresi Başkanlığı</h6>
+                <span>Vergi Borcu Sorgulama ve Ödeme</span>
+              </div>
+            </div>
+          </a>
+        </li>
 
-<section id="top-services-block" class=" d-flex flex-column align-items-center">
-  <p class="d-flex justify-content-center fw-light">En Çok Kullanılan Hizmetler</p>
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">4</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1473.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>e-Devlet Kapısı</h6>
+                <span>Çalışma Hayatım</span>
+              </div>
+            </div>
+          </a>
+        </li>
 
-      <ol class="services-list d-flex flex-wrap ps-0 m-0" style="list-style-type: none;">
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">1</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/254.1.8.0.webp">
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">5</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/415.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Türkiye Noterler Birliği</h6>
+                <span>Adıma Tescilli Araç Sorgulama</span>
+              </div>
             </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Sosyal Güvenlik Kurumu</h6>
-              <span>SGK Tescil ve Hizmet Dökümü / İşyeri Ünvan Listesi</span>
-            </div>
-          </div>
-        </a></li>
+          </a>
+        </li>
 
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">2</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/13.1.8.0.webp">
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">6</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/254.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Sosyal Güvenlik Kurumu</h6>
+                <span>Normal Şartlarda Ne Zaman Emekli Olabilirim?</span>
+              </div>
             </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Emniyet Genel Müdürlüğü</h6>
-              <span>Araç Plakasına Yazılan Ceza Sorgulama</span>
-            </div>
-          </div>
-        </a></li>
+          </a>
+        </li>
 
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">3</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/14.1.8.0.webp">
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">7</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1378.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Aile ve Sosyal Hizmetler Bakanlığı</h6>
+                <span>Sosyal Yardım Bilgileri Sorgulama</span>
+              </div>
             </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Gelir İdaresi Başkanlığı</h6>
-              <span>Vergi Borcu Sorgulama ve Ödeme</span>
-            </div>
-          </div>
-        </a></li>
+          </a>
+        </li>
 
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">4</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1473.1.8.0.webp">
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">8</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Adalet Bakanlığı</h6>
+                <span>Dava Dosyası Sorgulama</span>
+              </div>
             </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>e-Devlet Kapısı</h6>
-              <span>Çalışma Hayatım</span>
-            </div>
-          </div>
-        </a></li>
+          </a>
+        </li>
 
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">5</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/415.1.8.0.webp">
+        <li class="services-list-item">
+          <a href="#">
+            <div class="d-flex align-items-center">
+              <div class="number">9</div>
+              <div class="img">
+                <img
+                  src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/302.1.8.0.webp"
+                />
+              </div>
+              <div class="services-item-text d-flex flex-column">
+                <h6>Ulaştırma ve Altyapı Bakanlığı</h6>
+                <span>TÜVTÜRK Muayene Randevu Kayıt</span>
+              </div>
             </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Türkiye Noterler Birliği</h6>
-              <span>Adıma Tescilli Araç Sorgulama</span>
-            </div>
-          </div>
-        </a></li>
-
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">6</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/254.1.8.0.webp">
-            </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Sosyal Güvenlik Kurumu</h6>
-              <span>Normal Şartlarda Ne Zaman Emekli Olabilirim?</span>
-            </div>
-          </div>
-        </a></li>
-
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">7</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1378.1.8.0.webp">
-            </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Aile ve Sosyal Hizmetler Bakanlığı</h6>
-              <span>Sosyal Yardım Bilgileri Sorgulama</span>
-            </div>
-          </div>
-        </a></li>
-
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">8</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/1.1.8.0.webp">
-            </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Adalet Bakanlığı</h6>
-              <span>Dava Dosyası Sorgulama</span>
-            </div>
-          </div>
-        </a></li>
-
-        <li class="services-list-item"><a href="#">
-          <div class="d-flex align-items-center">
-            <div class="number">9</div>
-            <div class="img">
-              <img src="//cdn.e-devlet.gov.tr/themes/ankara/images/logos/64webp/302.1.8.0.webp">
-            </div>
-            <div class="services-item-text d-flex flex-column">
-              <h6>Ulaştırma ve Altyapı Bakanlığı</h6>
-              <span>TÜVTÜRK Muayene Randevu Kayıt</span>
-            </div>
-          </div>
-        </a></li>
-
+          </a>
+        </li>
       </ol>
     </section>
 
@@ -633,151 +1011,312 @@
         <li class="shortcuts-items">
           <a href="#">
             <div class="card border-0">
-              <img src="//cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0001.1.8.0.webp" class="shortcuts-img card-img-top">
-                <div class="card-body px-0">
-                  <h6 class="card-title m-0">Belge Doğrulama</h6>
-                  <span class="card-text">e-Devlet Kapısı'ndan alınan barkodlu belgeleri burada doğrulayın.</span>
-                </div>
+              <img
+                src="//cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0001.1.8.0.webp"
+                class="shortcuts-img card-img-top"
+              />
+              <div class="card-body px-0">
+                <h6 class="card-title m-0">Belge Doğrulama</h6>
+                <span class="card-text"
+                  >e-Devlet Kapısı'ndan alınan barkodlu belgeleri burada
+                  doğrulayın.</span
+                >
+              </div>
             </div>
           </a>
         </li>
         <li class="shortcuts-items">
           <a href="#">
             <div class="card border-0">
-              <img src="//cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0003.1.8.0.webp" class="shortcuts-img card-img-top">
-                <div class="card-body px-0">
-                  <h6 class="card-title m-0">e-Devlet'te Engel Yok</h6>
-                  <span class="card-text">Çağrı Merkezimize artık işaret dili kullanarak ulaşabilirsiniz.</span>
-                </div>
+              <img
+                src="//cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0003.1.8.0.webp"
+                class="shortcuts-img card-img-top"
+              />
+              <div class="card-body px-0">
+                <h6 class="card-title m-0">e-Devlet'te Engel Yok</h6>
+                <span class="card-text"
+                  >Çağrı Merkezimize artık işaret dili kullanarak
+                  ulaşabilirsiniz.</span
+                >
+              </div>
             </div>
           </a>
         </li>
       </ul>
     </section>
 
-
-    <section id="categories-block" class="d-flex justify-content-center align-items-center">
-      <div class="inner-frame d-flex flex-column justify-content-center align-items-center">
+    <section
+      id="categories-block"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="inner-frame d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="content-wrapper d-flex flex-column justify-content-center">
           <h2 class="e-service m-0">e-Hizmet Kategorileri</h2>
-          <p class="e-service-text">e-Devlet Kapısı altyapısını kullanarak hizmet sunan yüzlerce kuruma ait binlerce hizmetten siz de güvenle faydalanabilir bu sayede zamanınızı ve paranızı boşa harcamamış olursunuz. 
-            Bu sayfa üzerindeki seçenekleri kullanarak ulaşmak istediğiniz bilgi, belge veya başvuru formuna hızla ulaşabilirsiniz.</p>
+          <p class="e-service-text">
+            e-Devlet Kapısı altyapısını kullanarak hizmet sunan yüzlerce kuruma
+            ait binlerce hizmetten siz de güvenle faydalanabilir bu sayede
+            zamanınızı ve paranızı boşa harcamamış olursunuz. Bu sayfa
+            üzerindeki seçenekleri kullanarak ulaşmak istediğiniz bilgi, belge
+            veya başvuru formuna hızla ulaşabilirsiniz.
+          </p>
         </div>
         <ul class="service-categories-list d-flex flex-wrap p-0 m-0">
           <li class="service-categories-item">
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                </svg>
-                <em>Adalet</em>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-chevron-double-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+              <em>Adalet</em>
             </a>
-          </li> 
+          </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-feather" viewBox="0 0 16 16">
-                <path d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-feather"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173"
+                />
               </svg>
               <em>Çevre, Tarım ve Hayvancılık</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-building"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                />
               </svg>
               <em>Devlet ve Mevzuat</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-mortarboard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"
+                />
               </svg>
               <em>Eğitim</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-book"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+                />
               </svg>
               <em>Genel Bilgiler</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-shield" viewBox="0 0 16 16">
-                <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-shield"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                />
               </svg>
               <em>Güvenlik</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-briefcase"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                />
               </svg>
               <em>İş ve Kariyer</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
-                <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
-                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-person-vcard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+                />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"
+                />
               </svg>
               <em>Kişisel Bilgiler</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-heart-pulse" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5"/>
-                <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-heart-pulse"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5"
+                />
+                <path
+                  d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z"
+                />
               </svg>
               <em>Sağlık</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-umbrella" viewBox="0 0 16 16">
-                <path d="M8 0a.5.5 0 0 1 .5.5v.514C12.625 1.238 16 4.22 16 8c0 0 0 .5-.5.5-.149 0-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394A3.17 3.17 0 0 0 13 7.5c-.638 0-1.178.213-1.564.434a3.5 3.5 0 0 0-.555.394l-.025.023-.003.003s-.204.146-.353.146-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394 3.3 3.3 0 0 0-1.064-.39V13.5H8h.5v.039l-.005.083a3 3 0 0 1-.298 1.102 2.26 2.26 0 0 1-.763.88C7.06 15.851 6.587 16 6 16s-1.061-.148-1.434-.396a2.26 2.26 0 0 1-.763-.88 3 3 0 0 1-.302-1.185v-.025l-.001-.009v-.003s0-.002.5-.002h-.5V13a.5.5 0 0 1 1 0v.506l.003.044a2 2 0 0 0 .195.726c.095.191.23.367.423.495.19.127.466.229.879.229s.689-.102.879-.229c.193-.128.328-.304.424-.495a2 2 0 0 0 .197-.77V7.544a3.3 3.3 0 0 0-1.064.39 3.5 3.5 0 0 0-.58.417l-.004.004S5.65 8.5 5.5 8.5s-.352-.145-.352-.145l-.004-.004a3.5 3.5 0 0 0-.58-.417A3.17 3.17 0 0 0 3 7.5c-.638 0-1.177.213-1.564.434a3.5 3.5 0 0 0-.58.417l-.004.004S.65 8.5.5 8.5C0 8.5 0 8 0 8c0-3.78 3.375-6.762 7.5-6.986V.5A.5.5 0 0 1 8 0M6.577 2.123c-2.833.5-4.99 2.458-5.474 4.854A4.1 4.1 0 0 1 3 6.5c.806 0 1.48.25 1.962.511a9.7 9.7 0 0 1 .344-2.358c.242-.868.64-1.765 1.271-2.53m-.615 4.93A4.16 4.16 0 0 1 8 6.5a4.16 4.16 0 0 1 2.038.553 8.7 8.7 0 0 0-.307-2.13C9.434 3.858 8.898 2.83 8 2.117c-.898.712-1.434 1.74-1.731 2.804a8.7 8.7 0 0 0-.307 2.131zm3.46-4.93c.631.765 1.03 1.662 1.272 2.53.233.833.328 1.66.344 2.358A4.14 4.14 0 0 1 13 6.5c.77 0 1.42.23 1.897.477-.484-2.396-2.641-4.355-5.474-4.854z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-umbrella"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a.5.5 0 0 1 .5.5v.514C12.625 1.238 16 4.22 16 8c0 0 0 .5-.5.5-.149 0-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394A3.17 3.17 0 0 0 13 7.5c-.638 0-1.178.213-1.564.434a3.5 3.5 0 0 0-.555.394l-.025.023-.003.003s-.204.146-.353.146-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394 3.3 3.3 0 0 0-1.064-.39V13.5H8h.5v.039l-.005.083a3 3 0 0 1-.298 1.102 2.26 2.26 0 0 1-.763.88C7.06 15.851 6.587 16 6 16s-1.061-.148-1.434-.396a2.26 2.26 0 0 1-.763-.88 3 3 0 0 1-.302-1.185v-.025l-.001-.009v-.003s0-.002.5-.002h-.5V13a.5.5 0 0 1 1 0v.506l.003.044a2 2 0 0 0 .195.726c.095.191.23.367.423.495.19.127.466.229.879.229s.689-.102.879-.229c.193-.128.328-.304.424-.495a2 2 0 0 0 .197-.77V7.544a3.3 3.3 0 0 0-1.064.39 3.5 3.5 0 0 0-.58.417l-.004.004S5.65 8.5 5.5 8.5s-.352-.145-.352-.145l-.004-.004a3.5 3.5 0 0 0-.58-.417A3.17 3.17 0 0 0 3 7.5c-.638 0-1.177.213-1.564.434a3.5 3.5 0 0 0-.58.417l-.004.004S.65 8.5.5 8.5C0 8.5 0 8 0 8c0-3.78 3.375-6.762 7.5-6.986V.5A.5.5 0 0 1 8 0M6.577 2.123c-2.833.5-4.99 2.458-5.474 4.854A4.1 4.1 0 0 1 3 6.5c.806 0 1.48.25 1.962.511a9.7 9.7 0 0 1 .344-2.358c.242-.868.64-1.765 1.271-2.53m-.615 4.93A4.16 4.16 0 0 1 8 6.5a4.16 4.16 0 0 1 2.038.553 8.7 8.7 0 0 0-.307-2.13C9.434 3.858 8.898 2.83 8 2.117c-.898.712-1.434 1.74-1.731 2.804a8.7 8.7 0 0 0-.307 2.131zm3.46-4.93c.631.765 1.03 1.662 1.272 2.53.233.833.328 1.66.344 2.358A4.14 4.14 0 0 1 13 6.5c.77 0 1.42.23 1.897.477-.484-2.396-2.641-4.355-5.474-4.854z"
+                />
               </svg>
               <em>Sosyal Güvenlik ve Sigorta</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                />
               </svg>
               <em>Şikayet ve Bilgi Edinme</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-broadcast-pin" viewBox="0 0 16 16">
-                <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-broadcast-pin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8"
+                />
               </svg>
               <em>Telekomünikasyon</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
-                <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
-                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-car-front"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"
+                />
+                <path
+                  d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"
+                />
               </svg>
               <em>Trafik ve Ulaşım</em>
             </a>
           </li>
           <li class="service-categories-item">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
-                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-file-earmark"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"
+                />
               </svg>
               <em>Vergi, Harç ve Cezalar</em>
             </a>
@@ -791,269 +1330,528 @@
         <div class="banner-content d-flex flex-column justify-content-end">
           <h3>Mobil Cihazlar için e-Devlet Kapısı</h3>
           <span>
-            e-Devlet Kapısı Mobil ile e-hizmetlere Android, iPhone, iPad ve Huawei cihazlarınızdan kolayca erişebilir, "Anlık Bilgilendirme" ile gelişmelerden vakit kaybetmeden haberdar olabilirsiniz.
+            e-Devlet Kapısı Mobil ile e-hizmetlere Android, iPhone, iPad ve
+            Huawei cihazlarınızdan kolayca erişebilir, "Anlık Bilgilendirme" ile
+            gelişmelerden vakit kaybetmeden haberdar olabilirsiniz.
           </span>
           <div class="mobile-market-icons d-flex flex-wrap">
             <a href="#" class="mobile-market-link">
-              <img src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png">
+              <img
+                src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png"
+              />
             </a>
             <a href="#" class="mobile-market-link">
-              <img src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png">
+              <img
+                src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png"
+              />
             </a>
             <a href="#" class="mobile-market-link">
-              <img src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png">
+              <img
+                src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/mobile-market/apple-tr.1.8.0.png"
+              />
             </a>
           </div>
         </div>
       </div>
     </section>
 
-
-  <section id="myGov" class="d-flex justify-content-center">
-    <div class="banner-container d-flex align-items-center">
-      <div class="bannerContent myGovLogo d-flex justify-content-end"> 
-        <img src="https://cdn.e-devlet.gov.tr/themes/izmir/images/home_page/mygovlogo.png" class="myGovImage">
-      </div>
-      <div class="bannerContent myGovContent d-flex flex-column">
-        <p class="myGov-text">Kardeş Ülke Azerbaycan e-Devlet Portalı</p>
-        <div class="myGovButton d-flex align-items-center justify-content-start">
-          <a href="#" class="myGovLink">
-            www.e-gov.az
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right ms-2" viewBox="0 0 16 16">
-              <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-            </svg>
-          </a>
+    <section id="myGov" class="d-flex justify-content-center">
+      <div class="banner-container d-flex align-items-center">
+        <div class="bannerContent myGovLogo d-flex justify-content-end">
+          <img
+            src="https://cdn.e-devlet.gov.tr/themes/izmir/images/home_page/mygovlogo.png"
+            class="myGovImage"
+          />
+        </div>
+        <div class="bannerContent myGovContent d-flex flex-column">
+          <p class="myGov-text">Kardeş Ülke Azerbaycan e-Devlet Portalı</p>
+          <div
+            class="myGovButton d-flex align-items-center justify-content-start"
+          >
+            <a href="#" class="myGovLink">
+              www.e-gov.az
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right ms-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="social-media-block">
-    <div class="social-media-container d-flex justify-content-start">
-    <div class="social-media-content d-flex flex-column align-items-center">
-        <h3 class="social-media-header">Sosyal Medyada da Sizin Yanınızdayız!</h3>
-        <span class="social-media-text">Resmî sosyal medya hesaplarımızda e-Devlet Kapısı ile ilgili gelişmelerden haberdar olabilir, tüm soru ve hata
-        bildirimlerinizi ekibimize iletebilirsiniz. Bize ulaşan tüm yorum ve mesajlar dikkatle incelenmekte ve tümüne cevap 
-        verilmesi amaçlanmaktadır.</span>
+    <section id="social-media-block">
+      <div class="social-media-container d-flex justify-content-start">
+        <div class="social-media-content d-flex flex-column align-items-center">
+          <h3 class="social-media-header">
+            Sosyal Medyada da Sizin Yanınızdayız!
+          </h3>
+          <span class="social-media-text"
+            >Resmî sosyal medya hesaplarımızda e-Devlet Kapısı ile ilgili
+            gelişmelerden haberdar olabilir, tüm soru ve hata bildirimlerinizi
+            ekibimize iletebilirsiniz. Bize ulaşan tüm yorum ve mesajlar
+            dikkatle incelenmekte ve tümüne cevap verilmesi
+            amaçlanmaktadır.</span
+          >
 
-        <div class="links d-flex flex-wrap justify-content-center">
-          <a href="#" class="social-media-links">
-            <img src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/twitter-logo-black.png" height="20">
-            <span>@ekapi</span>
-          </a>
-          <a href="#" class="social-media-links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-            <span class="ms-1 mt-3">/edevletkapi</span>
-          </a>
-          <a href="#" class="social-media-links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-            <span class="ms-1">e-Devlet Kapısı</span>
-          </a>
-          <a href="#" class="social-media-links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-            <span class="ms-1">/edevletkapisi</span>
-          </a>
-    </div>
-    
-        <em class="hashtag">
-          <div class="d-flex flex-column align-items-center">
-            <div>
-              #edevlet
-            </div>
-            <a href="#" class="social-media-usage-guide">Sosyal Medya Kullanım Kılavuzu</a>
+          <div class="links d-flex flex-wrap justify-content-center">
+            <a href="#" class="social-media-links">
+              <img
+                src="	https://cdn.e-devlet.gov.tr/themes/izmir/images/icons/twitter-logo-black.png"
+                height="20"
+              />
+              <span>@ekapi</span>
+            </a>
+            <a href="#" class="social-media-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+              <span class="ms-1 mt-3">/edevletkapi</span>
+            </a>
+            <a href="#" class="social-media-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
+              <span class="ms-1">e-Devlet Kapısı</span>
+            </a>
+            <a href="#" class="social-media-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+              <span class="ms-1">/edevletkapisi</span>
+            </a>
           </div>
+
+          <em class="hashtag">
+            <div class="d-flex flex-column align-items-center">
+              <div>#edevlet</div>
+              <a href="#" class="social-media-usage-guide"
+                >Sosyal Medya Kullanım Kılavuzu</a
+              >
+            </div>
           </em>
-    
         </div>
-    </div>
+      </div>
     </section>
 
+    <section id="statistics-block">
+      <h2 class="statisticContentHeader">
+        e-Devlet Kapısı ile İlgili Bilgiler
+      </h2>
+      <div class="statisticContent d-flex flex-column justify-content-center">
+        <ul class="statisticList d-flex flex-wrap justify-content-around">
+          <li class="statisticListItem">
+            <dl>
+              <dt>
+                <dfn>Kayıtlı Kullanıcı</dfn>
+              </dt>
+              <dd>
+                <span>6</span>
+                <span>7</span>
+                <span>.</span>
+                <span>5</span>
+                <span>4</span>
+                <span>8</span>
+                <span>.</span>
+                <span>0</span>
+                <span>2</span>
+                <span>6</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="statisticListItem">
+            <dl>
+              <dt>
+                <dfn>Hizmet Sayısı</dfn>
+              </dt>
+              <dd>
+                <span>8</span>
+                <span>.</span>
+                <span>4</span>
+                <span>4</span>
+                <span>1</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="statisticListItem">
+            <dl>
+              <dt>
+                <dfn>Mobil Hizmetler</dfn>
+              </dt>
+              <dd>
+                <span>5</span>
+                <span>.</span>
+                <span>1</span>
+                <span>5</span>
+                <span>7</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="statisticListItem">
+            <dl>
+              <dt>
+                <dfn>Kurum</dfn>
+              </dt>
+              <dd>
+                <span>1</span>
+                <span>.</span>
+                <span>0</span>
+                <span>8</span>
+                <span>9</span>
+              </dd>
+            </dl>
+          </li>
+        </ul>
 
-  <section id="statistics-block">
-    <h2 class="statisticContentHeader">e-Devlet Kapısı ile İlgili Bilgiler</h2>
-  <div class="statisticContent d-flex flex-column justify-content-center">
-    <ul class="statisticList d-flex flex-wrap justify-content-around">
-        <li class="statisticListItem">
-          <dl>
-          <dt>
-              <dfn>Kayıtlı Kullanıcı</dfn>
-          </dt>
-          <dd>
-              <span>6</span>
-              <span>7</span>
-              <span>.</span>
-              <span>5</span>
-              <span>4</span>
-              <span>8</span>
-              <span>.</span>
-              <span>0</span>
-              <span>2</span>
-              <span>6</span>
-          </dd>
-      </dl>
-    </li>
-        <li class="statisticListItem">
-          <dl>
-          <dt>
-              <dfn>Hizmet Sayısı</dfn>
-          </dt>
-          <dd>
-              <span>8</span>
-              <span>.</span>
-              <span>4</span>
-              <span>4</span>
-              <span>1</span>
-          </dd>
-      </dl>
-        </li>
-        <li class="statisticListItem">
-          <dl>
-          <dt>
-              <dfn>Mobil Hizmetler</dfn>
-          </dt>
-          <dd>
-              <span>5</span>
-              <span>.</span>
-              <span>1</span>
-              <span>5</span>
-              <span>7</span>
-          </dd>
-      </dl>
-        </li>
-        <li class="statisticListItem">
-          <dl>
-          <dt>
-              <dfn>Kurum</dfn>
-          </dt>
-          <dd>
-              <span>1</span>
-              <span>.</span>
-              <span>0</span>
-              <span>8</span>
-              <span>9</span>
+        <a href="#" class="statisticLink">
+          Detaylı İstatistik Bilgileri
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-arrow-right-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
 
-          </dd>
-      </dl>
-        </li>
-    </ul>
-  
-    <a href="#" class="statisticLink"> 
-      Detaylı İstatistik Bilgileri 
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-      </svg>
-    </a>
-  </div>
-  </section>
-
-
-<section id="info-block">
-  <div class="statistics-content">
-    <div class="statistics-text d-flex flex flex-column align-items-center">
-      <p class="info-text"><strong>e-Devlet Kapısı</strong>  ile kamu kurumlarının sunduğu hizmetlere tek noktadan, hızlı ve güvenli erişin.</p>
-      <ul class="d-flex flex-nowrap infoList m-0 p-0">
-        <li class="infoItem">
-          <a href="#">
-            <div class="d-flex justify-content-center align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
-                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
-              </svg>
-              <em>Nasıl Çalışıyor?</em>
-            </div>
-            <div>
-              <span>e-Hizmetlerin nasıl çalıştığını ve sistemin genel mimarisini öğrenin.</span>
-            </div>
-          </a>
-        </li>
-        <li class="infoItem">
-          <a href="#">
-            <div class="d-flex justify-content-center  align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16">
-                <path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"/>
-              </svg>
-              <em>Erişilebilirlik</em>
-            </div>
-            <div>
-              <span>Engelli bireyler için kullanımı kolaylaştıran özelliklerimizi inceleyin.</span>
-            </div>
-          </a>
-        </li>
-        <li class="infoItem">
-          <a href="#">
-            <div class="d-flex justify-content-center  align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
-              </svg>
-              <em>Yüksek Güvenlik</em>
-            </div>
-            <div>
-              <span>Kişisel bilgilerinizin korunması için aldığımız önlemleri inceleyin.</span>
-            </div>
-          </a>
-        </li>          
-      </ul>
-    </div>
-  </div>
-  </section>
-  
-
-  <footer id="footer">
-    <div class="bottomLinksGroup d-flex flex-column">
-        
-      <div class="bottomLinksWrapper d-flex">
-        <nav class="bottomLinksBlock">
-          <ul class="bottomLinks d-flex flex-wrap p-0">
-            <li class="items top-items">Items</li>
-            <li class="items top-items">Items</li>
-            <li class="items top-items">Items</li>
-            <li class="items">Items</li>
-            <li class="items">Items</li>
+    <section id="info-block">
+      <div class="statistics-content">
+        <div class="statistics-text d-flex flex flex-column align-items-center">
+          <p class="info-text">
+            <strong>e-Devlet Kapısı</strong> ile kamu kurumlarının sunduğu
+            hizmetlere tek noktadan, hızlı ve güvenli erişin.
+          </p>
+          <ul class="d-flex flex-nowrap infoList m-0 p-0">
+            <li class="infoItem">
+              <a href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-arrow-repeat"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"
+                    />
+                  </svg>
+                  <em>Nasıl Çalışıyor?</em>
+                </div>
+                <div>
+                  <span
+                    >e-Hizmetlerin nasıl çalıştığını ve sistemin genel
+                    mimarisini öğrenin.</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="infoItem">
+              <a href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-person-wheelchair"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"
+                    />
+                  </svg>
+                  <em>Erişilebilirlik</em>
+                </div>
+                <div>
+                  <span
+                    >Engelli bireyler için kullanımı kolaylaştıran
+                    özelliklerimizi inceleyin.</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="infoItem">
+              <a href="#">
+                <div class="d-flex justify-content-center align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-lock"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"
+                    />
+                  </svg>
+                  <em>Yüksek Güvenlik</em>
+                </div>
+                <div>
+                  <span
+                    >Kişisel bilgilerinizin korunması için aldığımız önlemleri
+                    inceleyin.</span
+                  >
+                </div>
+              </a>
+            </li>
           </ul>
-        </nav>
-        <div class="bottomRightWrapper d-flex ">
-          <nav class="bottomContacts">
-            <div>
-            <em>Yardım mı lazım?</em>
-
-          </div>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-            </ul>
-          
-          </nav>
-          <nav class="bottomSocialLinks d-flex flex-wrap">
-            <a href="#" class="socialLinks">item 1</a>
-            <a href="#" class="socialLinks">item 2</a>
-            <a href="#" class="socialLinks">item 3</a>
-            <a href="#" class="socialLinks">item 4</a>
-          </nav>
         </div>
       </div>
+    </section>
 
-      <hr style="border-top: dashed 1px; margin: 0;" />
+    <footer id="footer">
+      <div class="bottomLinksGroup d-flex flex-column">
+        <div class="bottomLinksWrapper d-flex">
+          <nav class="bottomLinksBlock">
+            <ul class="bottomLinks d-flex flex-wrap p-0">
+              <li class="items top-items">
+                <h3>e-Devlet Kapısı</h3>
+                <ul>
+                  <a href="#"><li>English</li></a>
+                  <a href="#"><li>Hakkımızda</li></a>
+                  <a href="#"><li>Yasal Bİldirim</li></a>
+                  <a href="#"><li>KVKK Aydınlatma Yükümlülüğü</li></a>
+                  <a href="#"><li>Gizlilik ve Kullanım</li></a>
+                  <a href="#"><li>Politikalarımız</li></a>
+                  <a href="#"><li>DETSİS</li></a>
+                  <a href="#"><li>Kurumsal Kimlik</li></a>                  
+                </ul>
+              </li>
+              <li class="items top-items">
+                <h3>e-Hizmetler</h3>
+                <ul>
+                  <a href="#"><li>Sık Kullanılan Hizmetler</li></a>
+                  <a href="#"><li>Yeni Eklenen Hizmetler</li></a>
+                  <a href="#"><li>Kurum Hizmetleri</li></a>
+                </ul>
+              </li>
+              <li class="items top-items">
+                <h3>Yardım</h3>
+                <ul>
+                  <a href="#"><li>Genel Yardım</li></a>
+                  <a href="#"><li>Sıkça Sorulanlar</li></a>
+                  <a href="#"><li>Güvenliğiniz İçin</li></a>
+                  <a href="#"><li>Help For Non-Citizens</li></a>                  
+                </ul>
+              </li>
+              <li class="items">
+                <h3>Bize Ulaşın</h3>
+                <ul>
+                  <a href="#"><li>İletişim</li></a>
+                  <a href="#"><li>CİMER Başvurusu</li></a>               
+                </ul>
+              </li>
+              <li class="items">
+                <h3>Erişilebilirlik</h3>
+                <ul>
+                  <a href="#"><li>Salt Metin Görünümü</li></a>
+                  <a href="#"><li>Daha Belirgin Odaklama</li></a>
+                  <a href="#"><li>Klavye Kısayolları</li></a>
+                  <a href="#"><li>Site Haritası</li></a>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="bottomRightWrapper d-flex">
+            <nav class="bottomContacts">
+              <div class="d-flex">
+                <img
+                  src="https://cdn.e-devlet.gov.tr/themes/izmir/images/helpbuoy.215.svg"
+                />
+                <div class="ms-3 bottomContacts-text">
+                  <em>Yardım mı lazım?</em>
+                  <p>
+                    Aşağıdaki yöntemleri kullanarak bizimle iletişime
+                    geçebilirsiniz.
+                  </p>
+                </div>
+              </div>
+              <ul class="bottomContacsList">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chat-left-dots text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                      />
+                      <path
+                        d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                      />
+                    </svg>
+                    <p>Hızlı Çözüm Merkezi</p>
+                  </a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                      />
+                    </svg>
+                    <p>Bize Yazın</p>
+                  </a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                      />
+                    </svg>
+                    <p>e-Devlet Çağrı Merkezi</p>
+                  </a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-balloon-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+                      />
+                    </svg>
+                    <p>Engelsiz Çağrı Merkezi</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="bottomSocialLinks d-flex flex-wrap">
+              <a href="#" class="socialLinks d-flex mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-1" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                  <p>Facebook</p>
+              </a>
+              <a href="#" class="socialLinks d-flex mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x me-1" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                  <p>Twitter</p>
+              </a>
+              <a href="#" class="socialLinks d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube me-1 " viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <p>Youtube</p>
+              </a>
+              <a href="#" class="socialLinks d-flex">               
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram me-1" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                  <p>Instagram</p>
 
-      <div class="bottomPartnerLinks d-flex">
-        <div class="images"> Item 1</div>
-        <div class="bottomPartnerText">Item 2</div>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <hr style="border-top: dashed 1px white; margin: 0" />
+
+        <div class="bottomPartnerLinks d-flex">
+          <div class="d-flex images">
+            <img class="footer-image" src="//cdn.e-devlet.gov.tr/themes/izmir/images/footer/DDO-logo.png">
+            <img class="footer-image" src="//cdn.e-devlet.gov.tr/themes/izmir/images/footer/turksat.png">
+          </div>
+          <div class="bottomPartnerText">
+            <p class="mt-2">
+              e-Devlet Kapısı’nın kurulması ve yönetilmesi görevi <a href="#">T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi Başkanlığı</a> tarafından yürütülmekte olup, sistemin geliştirilmesi ve işletilmesi <a href="#">Türksat A.Ş.</a> tarafından yapılmaktadır.</p>
+          </div>
+        </div>
+
+        <hr style="border-top: dashed 1px white; margin: 0" />
+
+        <div class="bottomCopyrightBlock d-flex justify-content-center">
+          <p class="me-1">©
+          <time datetime="2025-04-29"> 2025 </time>  
+          Tüm Hakları Saklıdır. <a href="#">Gizlilik, Kullanım ve Telif Hakları</a> bildiriminde belirtilen kurallar çerçevesinde hizmet sunulmaktadır.</p>
+        </div>
       </div>
+    </footer>
 
-      <hr style="border-top: dashed 1px; margin: 0;" />
-
-      <div class="bottomCopyrightBlock d-flex justify-content-center">Item 1</div>
-      </div>
-    </footer>  
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="project.js"></script>
-</body>
+  </body>
 </html>
