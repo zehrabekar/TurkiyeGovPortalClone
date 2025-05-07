@@ -404,7 +404,6 @@ margin: 0;
 }
 
 
-
 #banners-block {
   width: 100%;
   height: auto;
@@ -414,27 +413,254 @@ margin: 0;
 
 .top-banners {
   width: 1200px;
+  height: 285px;
   display: flex;
   align-items: stretch; /* Bu, tüm öğelerin aynı yükseklikte olmasını sağlar */
 }
 
-.precious-card {
-  width: 24%;
+.precious-card{
+  width: 25%;
+  height: 100%;
+  box-shadow: 0 0.8em 1.4em -1em rgb(0 0 0 / 30%);
+}
+
+.precious-card .card{
+  border-radius: 5px;
+  border: none;
+}
+
+.precious-card img{
+  height: 160px;
+}
+
+.precious-card .card-body{
+  height: 125px;
+  padding: 15px;
+}
+
+.precious-card a p{
+  font-size: 13px;
+  color: #4b4e51;
+}
+
+.slider-content{
+  width: 73%;
+  height:100%;
+  box-shadow: 0 0.8em 1.4em -1em rgb(0 0 0 / 30%);
+}
+
+.carousel-item{
+  height: 285px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+
+.slider-wrapper{
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper img{
+  height: 100%;
+  object-fit:contain;
+  object-position:left;
+}
+
+.slider-text-overlay{
+  width: 320px;
+  height: 100%;
+  background-color: rgb(255, 255, 255); /* Hafif şeffaf beyaz */
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
-  height: 100%; /* Precious Card yüksekliği Slider Content ile aynı olacak */
+  justify-content: center;
+  z-index: 2;
+  overflow: visible;
 }
 
-.precious-card h3 {
-  font-size: 1.5rem;
+
+.slider-text-overlay::before {
+  content: "";
+  position: absolute;
+  left: -100px; /* Kutunun solundan dışarı taşı */
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  z-index: 1;
+  pointer-events: none;
 }
 
-.precious-card p {
-  font-size: 13px;
-  color: #535353;
+.slider-text-overlay h4{
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
+
+.slider-text-overlay span{
+  color: #222;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.slider-text-overlay a{
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 5px 3px;
+  border: 1px solid #3b77ac;
+  border-radius: 30px;
+  color: #3b77ac;
+  font-size: 15px;
+}
+
+.custom-icon-wrapper{
+  background-color: rgba(204, 195, 195, 0.7);
+  border-radius: 50%;
+  padding: 5px;
+
+}
+
+@media (max-width:1245px){
+  .top-banners{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:1024px){
+  .slider-wrapper img{
+    object-fit:cover;
+  }
+  
+  .slider-text-overlay{
+    width: 40%;
+  }
+  
+  .slider-text-overlay h4{
+    font-size: 20px;
+  }
+  
+  .slider-text-overlay a{
+    font-size: 12px;
+  }
+  
+  }
+
+  @media (max-width:840px) {
+          
+    .precious-card img{
+      height: 150px;
+    }
+    
+    .precious-card .card-body{
+      height: 135px;
+      padding: auto;
+    }
+  
+    .slider-text-overlay h4{
+      font-size: 18px;
+    }
+  
+    .slider-text-overlay a{
+      margin-top: 8px;
+    }
+  
+    .slider-text-overlay span{
+      font-size: 13px;
+    }
+  
+  }
+
+  @media (max-width:690px){
+    .top-banners{
+      flex-direction: column;
+    }
+
+    .precious-card{
+      width: 100%;
+      height: 40%;
+      margin-bottom: 30px;
+    }
+
+    .precious-card .card{
+      height: 100%;
+    }
+
+    .precious-card img{
+      height: 70%;
+    }
+
+    .slider-content{
+      width: 100%;
+    }
+
+    #carouselExampleFade,
+    .carousel-inner,
+    .carousel-item{
+      height: 100%;
+    }
+
+    .slider-text-overlay{
+      display: none;
+    }
+
+    .slider-wrapper{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .slider-wrapper img{
+      height: 50%;
+    }
+
+    .slider-text{
+      width: 100%;
+      height: 50%;
+      background-color: rgb(216, 214, 214);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .slider-text a{
+      margin-top: 8px;
+      width: 100%;
+      border: 1px solid rgba(231,235,238,.5);
+      border-radius: 20px;
+      color: #3b77ac;
+      text-align: center;
+      text-decoration: none;
+      padding: 3px 0;
+    }
+  
+    .slider-text span{
+      font-size: 13px;
+    }
+
+    button .carousel-control-prev,
+    button .carousel-control-next{
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+   
+  
+  }
+
+  @media (min-width:690px){
+    .slider-text{
+      display: none;
+    }
+  }
+
 
 
 #services-card{
@@ -462,6 +688,10 @@ padding: 10px 10px 20px 10px;
 .colc4{
   width: 25%;
   height: 50%;
+}
+
+.card-block-links:hover{
+  color: #3975a9;
 }
 
 .card-block-links{
