@@ -86,13 +86,17 @@ ul{
   font-size: 15px;
 }
 
-.quick-solution{
+.add-user{
 background-color: transparent;
 border: 1px solid rgba(143, 204, 242, 0.99);
 }
 
-.quick-solution .nav-link{
+.add-user .nav-link{
   color: white;
+}
+
+.add-user .nav-link:hover {
+  color: #fff;
 }
 
 #newButton{
@@ -116,6 +120,10 @@ border: 1px solid rgba(143, 204, 242, 0.99);
 }
 
 .log-in .nav-link{
+  color: rgba(40, 151, 220, 0.99);
+}
+
+.log-in .nav-link:hover{
   color: rgba(40, 151, 220, 0.99);
 }
 

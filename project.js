@@ -77,7 +77,6 @@ function updateLayout() {
 updateLayout();
 
 
-
 // Sayfa kaydırma pozisyonunu kaydet
 window.onload = function() {
   if (sessionStorage.scrollPosition) {
@@ -85,8 +84,94 @@ window.onload = function() {
   }
 };
 
+
 // Sayfa kaydırma pozisyonunu her kaydırma değişikliğinde güncelle
 window.onscroll = function() {
   sessionStorage.scrollPosition = window.scrollY;
 };
+
+
+// Ad ve Soyad alanına sadece text girilebilir ve en az 3 karakter girilmeli
+// TC alanına sadece sayı girilebilecek ve 11 karakter sınırlaması olacak
+
+const Form = document.getElementById("addUserForm");
+Form.addEventListener("submit",submitForm);
+
+function submitForm(e){
+  e.preventDefault();
+
+  //error mesajlarını seçiyoruz
+  const firstNameError = document.getElementById("firstNameError");
+  const lastNameError = document.getElementById("lastNameError");
+  const tcError = document.getElementById("tcError");
+
+  //ad ve soyad alanlarını seçiyoruz
+  let firstName = document.getElementById("firstName").value.trim();
+  let lastName = document.getElementById("lastName").value.trim();
+  let tcNo = document.getElementById("tc").value.trim();
+
+  //ad alanına min 3 karakter harf girilmesi için :
+  if (firstName.length < 3) {
+    firstNameError.textContent = "En az 3 karakter girilmelidir";
+    firstNameError.style.display = "block";
+    return;
+  } else if (!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(firstName)) {
+    firstNameError.textContent = "Bu alana sadece harf girilebilir";
+    firstNameError.style.display = "block";
+    return;
+  } else {
+    firstNameError.style.display = "none";
+  }
+
+  if (lastName.length < 3) {
+    lastNameError.textContent = "En az 3 karakter girilmelidir";
+    lastNameError.style.display = "block";
+    return;
+  } else if (!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(lastName)) {
+    lastNameError.textContent = "Bu alana sadece harf girilebilir";
+    lastNameError.style.display = "block";
+    return;
+  } else {
+    lastNameError.style.display = "none";
+  }
+
+  // TC kimlik validasyonu
+  if (tcNo.length !== 11) {
+    tcError.textContent = "Lütfen 11 haneli TC kimlik numaranızı giriniz.";
+    tcError.style.display = "block";
+    return;
+  } else if (!/^\d{11}$/.test(tcNo)) { // Sadece rakam olmalı
+    tcError.textContent = "Bu alana sadece rakam girilebilir";
+    tcError.style.display = "block";
+    return;
+  } else {
+    tcError.style.display = "none";
+  }
+};
+
+// inputlara girilen hatalı değerler düzeltildiği an error mesajının gizlenmesi için :
+
+const firstNameInput = document.getElementById("firstName");
+firstNameInput.addEventListener("input", function () {
+  const value = firstNameInput.value.trim();
+  if (value.length >= 3) {
+    document.getElementById("firstNameError").style.display = "none";
+  }
+});
+
+const lastNameInput = document.getElementById("lastName");
+lastNameInput.addEventListener("input", function () {
+  const value = lastNameInput.value.trim();
+  if (value.length >= 3) {
+    document.getElementById("lastNameError").style.display = "none";
+  }
+});
+
+const tcInput = document.getElementById("tc");
+tcInput.addEventListener("input", function(){
+  const tcValue = tcInput.value.trim();
+  if (tcValue.length === 11){
+    document.getElementById("tcError").style.display = "none";
+  }
+})
 
