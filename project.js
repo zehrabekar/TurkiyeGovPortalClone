@@ -91,87 +91,124 @@ window.onscroll = function() {
 };
 
 
-// Ad ve Soyad alanına sadece text girilebilir ve en az 3 karakter girilmeli
-// TC alanına sadece sayı girilebilecek ve 11 karakter sınırlaması olacak
 
-const Form = document.getElementById("addUserForm");
-Form.addEventListener("submit",submitForm);
+let validationStarted = false;
 
-function submitForm(e){
-  e.preventDefault();
+// formu ve input alanlarını seçme :
+const form = document.getElementById("addUserForm");
+const firstNameInput = document.getElementById("firstName");
+const lastNameInput = document.getElementById("lastName");
+const passwordInput = document.getElementById("password");
+const tcInput = document.getElementById("tc");
 
-  //error mesajlarını seçiyoruz
-  const firstNameError = document.getElementById("firstNameError");
-  const lastNameError = document.getElementById("lastNameError");
-  const tcError = document.getElementById("tcError");
+// uyarı mesajlarını seçme :
+const firstNameError = document.getElementById("firstNameError");
+const lastNameError = document.getElementById("lastNameError");
+const passwordError = document.getElementById("passwordError");
+const tcError = document.getElementById("tcError");
 
-  //ad ve soyad alanlarını seçiyoruz
-  let firstName = document.getElementById("firstName").value.trim();
-  let lastName = document.getElementById("lastName").value.trim();
-  let tcNo = document.getElementById("tc").value.trim();
+// validasyon fonksiyonları
 
-  //ad alanına min 3 karakter harf girilmesi için :
-  if (firstName.length < 3) {
-    firstNameError.textContent = "En az 3 karakter girilmelidir";
+function validateFirstName(){
+  const firstNameValue = firstNameInput.value.trim();
+  if(firstNameValue.length < 3){
+    firstNameError.textContent = "Bu alana 3 karakterden az girilemez."
     firstNameError.style.display = "block";
-    return;
-  } else if (!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(firstName)) {
-    firstNameError.textContent = "Bu alana sadece harf girilebilir";
+    return false;
+  }
+  else if(!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(firstNameValue)){
+    firstNameError.textContent = "Bu alana sadece harf girilebilir."
     firstNameError.style.display = "block";
-    return;
-  } else {
+    return false;
+  }else{
     firstNameError.style.display = "none";
+    return true;
   }
+}
 
-  if (lastName.length < 3) {
-    lastNameError.textContent = "En az 3 karakter girilmelidir";
+function validateLastName(){
+  const lastNameValue = lastNameInput.value.trim();
+  if(lastNameValue.length < 3){
+    lastNameError.textContent = "Bu alana 3 karakterden az girilemez."
     lastNameError.style.display = "block";
-    return;
-  } else if (!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(lastName)) {
-    lastNameError.textContent = "Bu alana sadece harf girilebilir";
+    return false;
+  }
+  else if(!/^[a-zA-ZğüşöçıİĞÜŞÖÇ]+$/.test(lastNameValue)){
+    lastNameError.textContent = "Bu alana sadece harf girilebilir."
     lastNameError.style.display = "block";
-    return;
-  } else {
+    return false;
+  }else{
     lastNameError.style.display = "none";
+    return true;
   }
+}
 
-  // TC kimlik validasyonu
-  if (tcNo.length !== 11) {
-    tcError.textContent = "Lütfen 11 haneli TC kimlik numaranızı giriniz.";
+function validateTC() {
+  const tcValue = tcInput.value.trim();
+
+  if (!/^\d+$/.test(tcValue)) {
+    tcError.textContent = "Bu alana sadece rakam girilebilir.";
     tcError.style.display = "block";
-    return;
-  } else if (!/^\d{11}$/.test(tcNo)) { // Sadece rakam olmalı
-    tcError.textContent = "Bu alana sadece rakam girilebilir";
+    return false;
+  } else if (tcValue.length !== 11) {
+    tcError.textContent = "TC Kimlik numarası 11 haneli olmalıdır.";
     tcError.style.display = "block";
-    return;
+    return false;
   } else {
     tcError.style.display = "none";
+    return true;
   }
-};
+}
 
-// inputlara girilen hatalı değerler düzeltildiği an error mesajının gizlenmesi için :
+function validatePassword() {
+  const passwordValue = passwordInput.value.trim();
 
-const firstNameInput = document.getElementById("firstName");
-firstNameInput.addEventListener("input", function () {
-  const value = firstNameInput.value.trim();
-  if (value.length >= 3) {
-    document.getElementById("firstNameError").style.display = "none";
+  if (passwordValue.length < 6) {
+    passwordError.textContent = "Şifre en az 6 karakter olmalıdır.";
+    passwordError.style.display = "block";
+    return false;
+  } else if (passwordValue.length > 24) {
+    passwordError.textContent = "Şifre en fazla 24 karakter olabilir.";
+    passwordError.style.display = "block";
+    return false;
+  } else {
+    passwordError.style.display = "none";
+    return true;
+  }
+}
+
+
+//form submit edildiğinde :
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  validationStarted = true; 
+
+  const isFirstNameValid = validateFirstName();
+  const isLastNameValid = validateLastName();
+  const isTCValid = validateTC();
+  const isPasswordValid = validatePassword();
+
+  if (isFirstNameValid && isLastNameValid && isTCValid && isPasswordValid) {
+    console.log("Form geçerli. Gönderilebilir.");
   }
 });
 
-const lastNameInput = document.getElementById("lastName");
-lastNameInput.addEventListener("input", function () {
-  const value = lastNameInput.value.trim();
-  if (value.length >= 3) {
-    document.getElementById("lastNameError").style.display = "none";
-  }
+
+// INPUTLARA HER YAZILDIĞINDA (ama sadece submit'ten sonra çalışır)
+firstName.addEventListener("input", function () {
+  if (validationStarted) validateFirstName();
 });
 
-const tcInput = document.getElementById("tc");
-tcInput.addEventListener("input", function(){
-  const tcValue = tcInput.value.trim();
-  if (tcValue.length === 11){
-    document.getElementById("tcError").style.display = "none";
-  }
-})
+lastName.addEventListener("input", function () {
+  if (validationStarted) validateLastName();
+});
+
+tc.addEventListener("input", function () {
+  if (validationStarted) validateTC();
+});
+
+passwordInput.addEventListener("input", function () {
+  if (validationStarted) validatePassword();
+});
 
